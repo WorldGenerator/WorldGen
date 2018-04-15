@@ -194,8 +194,7 @@ public class World {
 		current[1] = game.fox;
 		current[2] = game.rabbit;
 		
-		Stopwatch timer1 = new Stopwatch();
-        double sum1 = 60.0;
+
 
         // while (timer1.elapsedTime() < 10.0) {
         // 	System.out.println(timer1.elapsedTime());
@@ -217,16 +216,41 @@ public class World {
 //	        StdDrawPlus.show(15);
 //	        i += 1;
 //        }
+		Stopwatch timer1 = new Stopwatch();
         while (true) {
+        	//Update Image
             StdDrawPlus.clear(new Color(0, 0, 0));
             StdDrawPlus.picture(size / 2, size / 2, "Image/mars plane.png");
             StdDrawPlus.picture(size * 3 / 5, size * 3 / 5, "Image/astro pose front.png");
+
+		    if (StdDrawPlus.isZPressed()) {
+		        myself.huntRabbit();
+		    } else if (StdDrawPlus.isXPressed()) {
+		    	myself.huntFox();
+		    } else if (StdDrawPlus.isCPressed()) {
+		    	myself.harvest();
+		    } else if (StdDrawPlus.isVPressed()) {
+		    	myself.grow();
+		    } else if (StdDrawPlus.isUPPressed()) {
+
+		    } else if (StdDrawPlus.isDOWNPressed()) {
+
+		    } else if (StdDrawPlus.isLEFTPressed()) {
+
+		    } else if (StdDrawPlus.isRIGHTPressed()) {
+
+		    }
+
             for (Rabbit r : game.rabbitList) {
                 Coordinate newloc = r.getLocation();
                 StdDrawPlus.picture(newloc.getxCord(), newloc.getyCord(), "Image/astro pose back.png");
             }
             StdDrawPlus.show(250);
-            game.moveRabbit();
+            if (timer1.elapsedTime() > 5.0) {
+            	game.moveRabbit();
+            	timer1 = new Stopwatch();
+            }
+            
         }
     }
 }
