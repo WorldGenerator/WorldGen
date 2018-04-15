@@ -2,7 +2,6 @@ public class Player {
     private Coordinate location;
     private int health;
     private World w;
-    private Land currLand;
 
     public Player(Coordinate startCord, int healthStart, World w) {
         this.location = location;
@@ -15,26 +14,26 @@ public class Player {
     }
 
     public void huntRabbit() {
-        if (currLand.hasRabbit()) {
+        if (w.getLocation(location).hasRabbit()) {
             w.removeRabbit(location);
         }
 
     }
 
     public void huntFox() {
-        if (currLand.hasFox()) {
+        if (w.getLocation(location).hasFox()) {
             w.removeFox(location);
         }
     }
 
     public void harvest() {
-        if (currLand.hasPlant()) {
+        if (w.getLocation(location).hasPlant()) {
             w.removePlant(location);
         }
     }
 
     public void grow() {
-        if (!currLand.hasPlant()) {
+        if (!w.getLocation(location).hasPlant()) {
             w.addPlant(location);
         }
     }
