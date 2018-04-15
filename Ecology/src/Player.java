@@ -17,7 +17,6 @@ public class Player {
         if (w.getLocation(location).hasRabbit()) {
             w.removeRabbit(location);
         }
-
     }
 
     public void huntFox() {

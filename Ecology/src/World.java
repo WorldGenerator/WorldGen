@@ -1,5 +1,6 @@
 import java.util.Random;
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class World {
 	private Land[][] theWorld = null;
@@ -114,7 +115,8 @@ public class World {
 
     //Called by Player
     public void addPlant(Coordinate c) {
-    	getLocation(c).addPlant();
+	    Plant newPlant = new Plant(c);
+    	getLocation(c).addPlant(newPlant);
     	plants += 1;
     }
 
@@ -139,5 +141,8 @@ public class World {
 
 	public static void main(String[] args) {
 		World n = new World(50, 50);
+		Scanner keyboard = new Scanner(System.in);
+		String text = keyboard.nextLine();
+		System.out.println(text);
 	}
 }
