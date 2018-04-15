@@ -13,7 +13,7 @@ public class World {
 
 	private Rabbit[] rabbitList = new Rabbit[2500];
 	private Fox[] foxList = new Fox[2500];
-	private HashSet<Plant> plantList = new HashSet<>();
+	private Plant[] plantList = new Plant[2500];
 	private ArrayList<Plant> seedPlant = new ArrayList<>();
 
 	private Player me;
@@ -91,16 +91,12 @@ public class World {
         foxList = temp;
     }
 
-    //random Plant growth
-    public void growPlant() {
-        for (Plant p : plantList) {
-            Coordinate newLocation = p.grow();
-            Land newLand = getLocation(newLocation);
-            if (newLand.isEmpty()) {
-                addPlant(newLocation);
-            }
-        }
-    }
+
+/////////////////////////////////////////////////////////////////////
+////         Set up Methods 									/////
+/////////////////////////////////////////////////////////////////////
+
+
 
     //Set up
     private boolean addRabbit() {
@@ -143,18 +139,29 @@ public class World {
         if (!l.hasPlant()) {
             Plant seedling = new Plant(new Coordinate(x,y));
             l.insert(seedling);
-            seedPlant.add(seedling);
-            plants += 1;
+            plantList[place] = seedling;
+            this.plants += 1;
             return true;
         }
         return false;
     }
 
-    public void updatePlants() {
-	    while (seedPlant.size() > 0) {
-	        plantList.add(seedPlant.remove(0));
-        }
-    }
+    // //random Plant growth
+    // public void growPlant() {
+    //     for (Plant p : plantList) {
+    //         Coordinate newLocation = p.grow();
+    //         Land newLand = getLocation(newLocation);
+    //         if (newLand.isEmpty()) {
+    //             addPlant(newLocation);
+    //         }
+    //     }
+    // }
+
+    // public void updatePlants() {
+	   //  while (seedPlant.size() > 0) {
+	   //      plantList.add(seedPlant.remove(0));
+    //     }
+    // }
 
 /////////////////////////////////////////////////////////////////////
 ////         Called by Player									/////
@@ -170,8 +177,12 @@ public class World {
     }
 
     public void removePlant(Coordinate c) {
-        getLocation(c).removePlant();
-        plants -= 1;
+    	if (getLocation(c).hasRabbit()) {
+	    	plantList[c.getxCord()*50 + c.getyCord()] = null;
+	        getLocation(c).removePlant();
+	        plants -= 1;    		
+    	}
+
 
     }
 
@@ -197,13 +208,34 @@ public class World {
 
     public void targetPlant(int target) {
 		while (plants < target) {
+			addPlant();
+		}
+		for (Plant p : plantList) {
+			if (p != null && (RANDOM.nextInt(10) > 6) && plants > target) {
+				removePlant(p.getLocation());
+			}
+		}
+    }
+
+    public void targetRabbit(int target) {
+		while (rabbit < target) {
 			addRabbit();
 		}
-		while (target < plants) {
-	        int place = RANDOM.nextInt(2500);
-	        int x = (int)place/50;
-	        int y = place%50;
-			removeRabbit(new Coordinate(x,y));
+		for (Rabbit r : rabbitList) {
+			if (r != null && (RANDOM.nextInt(10) > 6) && rabbit > target) {
+				removeRabbit(r.getLocation());
+			}
+		}
+    }
+
+    public void targetFox(int target) {
+		while (fox < target) {
+			addFox();
+		} 
+		for (Fox f : foxList) {
+			if (f != null && (RANDOM.nextInt(10) > 6) && fox > target) {
+				removeFox(f.getLocation());
+			}
 		}
     }
 
@@ -217,30 +249,28 @@ public class World {
 		Player myself = game.me;
 
         int size  = 25;
+
 		//Setting Plants, Rabbits, Fox in random locations
 		int i = 0;
-		while (i < size) {
+		while (i < 50) {
 			if (game.addRabbit()) {
 				i += 1;
 			}
 		}
 		i = 0;
-		while (i < size) {
+		while (i < 30) {
 			if (game.addFox()) {
 				i += 1;
 			}
 		}
 		i = 0;
-		while (i < size) {
+		while (i < 60) {
 			if (game.addPlant()) {
 				i += 1;
 			}
 		}
-		
 
-        // while (timer1.elapsedTime() < 10.0) {
-        // 	System.out.println(timer1.elapsedTime());
-        // }
+
         StdDrawPlus.setCanvasSize(size * 100, size * 100);
         StdDrawPlus.setXscale(0, size * 2);
         StdDrawPlus.setYscale(0, size * 2);
@@ -252,7 +282,9 @@ public class World {
 		
 		Stopwatch timing = new Stopwatch();
 
-		String img = "Image/astro pose front.png";
+		String img = "Image/front pose";
+		String num = " 3";
+		String cb = "";
         while (true) {
         	//Update Image
             StdDrawPlus.clear(new Color(0, 0, 0));
@@ -271,40 +303,67 @@ public class World {
 				}
 			}
 
-			StdDrawPlus.picture(myself.getLocation().getxCord(), myself.getLocation().getyCord(), img);
+			num = " 3";
+			StdDrawPlus.picture(myself.getLocation().getxCord(), myself.getLocation().getyCord(), img + num + cb + ".png");
 
 		    if (StdDrawPlus.isZPressed()) {
 		        myself.huntRabbit();
+		        cb = " crowbar";
 		    } else if (StdDrawPlus.isXPressed()) {
 		    	myself.huntFox();
+		    	cb = " crowbar";
 		    } else if (StdDrawPlus.isCPressed()) {
 		    	myself.harvest();
+		    	cb = "";
 		    } else if (StdDrawPlus.isVPressed()) {
 		    	myself.grow();
+		    	cb = "";
 		    } else if (StdDrawPlus.isUPPressed()) {
 		    	myself.moveUp();
-		    	img = "Image/astro pose back.png";
+		    	img = "Image/back pose";
 		    } else if (StdDrawPlus.isDOWNPressed()) {
 		    	myself.moveDown();
-		    	img = "Image/astro pose front.png";
+		    	img = "Image/front pose";
 		    } else if (StdDrawPlus.isLEFTPressed()) {
 		    	myself.moveLeft();
-		    	img = "Image/astro pose facing left.png";
+		    	img = "Image/left pose";
 		    } else if (StdDrawPlus.isRIGHTPressed()) {
 		    	myself.moveRight();
-		    	img = "Image/astro pose facing right.png";
+		    	img = "Image/RIGHT pose";
 		    }
 
-            StdDrawPlus.show(250);
-            if (timer1.elapsedTime() > 5.0) {
+            StdDrawPlus.show(125);
+            if (timer1.elapsedTime() > 3.0) {
 	            game.moveRabbit();
 	            game.moveFox();
 	            // game.growPlant();
 	            // game.updatePlants();
             	timer1 = new Stopwatch();
+
             }
 
-            if (timing.elaspedTime() > 15.0) {
+            StdDrawPlus.clear(new Color(0, 0, 0));
+			StdDrawPlus.picture(size, size, "Image/mars plane.png");
+
+			for (int x = 0; x < size *2 ; x += 1) {
+				for (int y = 0 ; y <size*2 ;  y+= 1) {
+					Land here = game.theWorld[x][y];
+					if (here.hasRabbit()) {
+						StdDrawPlus.picture(x, y, "Image/rabbit2.png");
+					} else if (here.hasFox()) {
+						StdDrawPlus.picture(x, y, "Image/fox2.png");
+					} else if (here.hasPlant()) {
+						StdDrawPlus.picture(x, y, "Image/PLANTalt.png");
+					}
+				}
+			}
+
+			num = " 2";
+
+			StdDrawPlus.picture(myself.getLocation().getxCord(), myself.getLocation().getyCord(), img + num + cb + ".png");
+			StdDrawPlus.show(125);
+
+            if (timing.elapsedTime() > 5.0) {
             	float[][] r = game.ratio;
             	int[] current = new int[3];
 
@@ -312,12 +371,13 @@ public class World {
 				current[1] = game.rabbit;
 				current[2] = game.fox;
 
-            	int targetP = (int) ((current[0]*(r[0][0])) + (current[1]*(r[1][0])) + (current[2]*(r[2][0])));
-            	int targetR = (int) ((current[0]*(r[0][1])) + (current[1]*(r[1][1])) + (current[2]*(r[2][1])));
-            	int targetF = (int) ((current[0]*(r[0][2])) + (current[1]*(r[1][2])) + (current[2]*(r[2][2])));
-            	System.out.println("Start " + timing.elaspedTime());
+            	int targetP = (int) ((current[0]*(r[0][0])) + (current[1]*(r[0][1])) + (current[2]*(r[0][2])));
+            	int targetR = (int) ((current[0]*(r[1][0])) + (current[1]*(r[1][1])) + (current[2]*(r[1][2])));
+            	int targetF = (int) ((current[0]*(r[2][0])) + (current[1]*(r[2][1])) + (current[2]*(r[2][2])));
+
             	game.targetPlant(targetP);
-            	System.out.println("End " + timing.elaspedTime());
+            	game.targetRabbit(targetR);
+            	game.targetFox(targetF);
             	timing = new Stopwatch();
             }
             // StdDrawPlus.show(1500);
