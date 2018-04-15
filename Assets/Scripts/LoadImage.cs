@@ -23,7 +23,6 @@ public class LoadImage : MonoBehaviour {
         while(rd.Peek() >=0 && z < size){
             string row = rd.ReadLine();
             float x = (float) -1 * size + 0.5f;
-            Debug.Log(row);
             char[] crs = row.ToCharArray();
             int index = 0;
             while(index < crs.Length){
