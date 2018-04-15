@@ -8,7 +8,7 @@ No prior coding or planning was done;  we actually assembled at the hackathon!
 
 ## Development
 
-Life on MARS (WorldGen) was developed at **SodaHacks** by Minh Nguyen, MyeongJae *"Tommy"* Chu, Richard Yu, and Luke Vacek in 30 hours.
+Life on MARS (WorldGen) was developed at **SodaHacks** by Aniruddha Nrusimha, Christine Qian, Max Lin, *"Tommy"* MyeongJae Chu in 18 hours. 
 
 ### Roadblocks
 
