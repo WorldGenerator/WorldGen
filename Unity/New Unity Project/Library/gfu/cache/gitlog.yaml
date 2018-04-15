@@ -1,0 +1,2088 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &1
+MonoBehaviour:
+  m_ObjectHideFlags: 61
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -530159753, guid: c71a32b55077b0547868a298b68d21df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cacheType: 3
+  lastUpdatedAtString: 2018-04-15T00:08:02.9086430-07:00
+  initializedAtString: 2018-04-15T00:08:02.9086430-07:00
+  log:
+  - commitID: 44c2e8f6b96a9299fe38b71775cb4f18556a1d7e
+    mergeA: 
+    mergeB: 
+    authorName: Ani Nrusimha
+    authorEmail: aninrusimha@berkeley.edu
+    commitEmail: aninrusimha@berkeley.edu
+    commitName: Ani Nrusimha
+    summary: Added an additional ignore
+    description: Added an additional ignore
+    timeString: 2018-04-14T22:17:56.0000000-07:00
+    commitTimeString: 2018-04-14T22:17:56.0000000-07:00
+    changes:
+    - path: .gitignore
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\.gitignore
+      projectPath: ..\..\.gitignore
+      originalPath: 
+      status: 4
+      staged: 0
+  - commitID: 6bc578b0299928d475c0d6b79a45bad419109fbe
+    mergeA: 
+    mergeB: 
+    authorName: Ani Nrusimha
+    authorEmail: aninrusimha@berkeley.edu
+    commitEmail: aninrusimha@berkeley.edu
+    commitName: Ani Nrusimha
+    summary: Intitial Unity files
+    description: Intitial Unity files
+    timeString: 2018-04-14T22:17:39.0000000-07:00
+    commitTimeString: 2018-04-14T22:17:39.0000000-07:00
+    changes:
+    - path: Unity\New Unity Project\Assets\Plugins.meta
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Assets\Plugins.meta
+      projectPath: Assets\Plugins.meta
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Assets\Plugins\GitHub.meta
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Assets\Plugins\GitHub.meta
+      projectPath: Assets\Plugins\GitHub.meta
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Assets\Plugins\GitHub\Editor.meta
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Assets\Plugins\GitHub\Editor.meta
+      projectPath: Assets\Plugins\GitHub\Editor.meta
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Assets\Plugins\GitHub\Editor\AsyncBridge.Net35.dll
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Assets\Plugins\GitHub\Editor\AsyncBridge.Net35.dll
+      projectPath: Assets\Plugins\GitHub\Editor\AsyncBridge.Net35.dll
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Assets\Plugins\GitHub\Editor\AsyncBridge.Net35.dll.meta
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Assets\Plugins\GitHub\Editor\AsyncBridge.Net35.dll.meta
+      projectPath: Assets\Plugins\GitHub\Editor\AsyncBridge.Net35.dll.meta
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Assets\Plugins\GitHub\Editor\CREDITS.txt
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Assets\Plugins\GitHub\Editor\CREDITS.txt
+      projectPath: Assets\Plugins\GitHub\Editor\CREDITS.txt
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Assets\Plugins\GitHub\Editor\CREDITS.txt.meta
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Assets\Plugins\GitHub\Editor\CREDITS.txt.meta
+      projectPath: Assets\Plugins\GitHub\Editor\CREDITS.txt.meta
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Assets\Plugins\GitHub\Editor\EULA.txt
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Assets\Plugins\GitHub\Editor\EULA.txt
+      projectPath: Assets\Plugins\GitHub\Editor\EULA.txt
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Assets\Plugins\GitHub\Editor\EULA.txt.meta
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Assets\Plugins\GitHub\Editor\EULA.txt.meta
+      projectPath: Assets\Plugins\GitHub\Editor\EULA.txt.meta
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Assets\Plugins\GitHub\Editor\GitHub.Api.dll
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Assets\Plugins\GitHub\Editor\GitHub.Api.dll
+      projectPath: Assets\Plugins\GitHub\Editor\GitHub.Api.dll
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Assets\Plugins\GitHub\Editor\GitHub.Api.dll.mdb
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Assets\Plugins\GitHub\Editor\GitHub.Api.dll.mdb
+      projectPath: Assets\Plugins\GitHub\Editor\GitHub.Api.dll.mdb
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Assets\Plugins\GitHub\Editor\GitHub.Api.dll.mdb.meta
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Assets\Plugins\GitHub\Editor\GitHub.Api.dll.mdb.meta
+      projectPath: Assets\Plugins\GitHub\Editor\GitHub.Api.dll.mdb.meta
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Assets\Plugins\GitHub\Editor\GitHub.Api.dll.meta
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Assets\Plugins\GitHub\Editor\GitHub.Api.dll.meta
+      projectPath: Assets\Plugins\GitHub\Editor\GitHub.Api.dll.meta
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Assets\Plugins\GitHub\Editor\GitHub.Logging.dll
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Assets\Plugins\GitHub\Editor\GitHub.Logging.dll
+      projectPath: Assets\Plugins\GitHub\Editor\GitHub.Logging.dll
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Assets\Plugins\GitHub\Editor\GitHub.Logging.dll.mdb
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Assets\Plugins\GitHub\Editor\GitHub.Logging.dll.mdb
+      projectPath: Assets\Plugins\GitHub\Editor\GitHub.Logging.dll.mdb
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Assets\Plugins\GitHub\Editor\GitHub.Logging.dll.mdb.meta
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Assets\Plugins\GitHub\Editor\GitHub.Logging.dll.mdb.meta
+      projectPath: Assets\Plugins\GitHub\Editor\GitHub.Logging.dll.mdb.meta
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Assets\Plugins\GitHub\Editor\GitHub.Logging.dll.meta
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Assets\Plugins\GitHub\Editor\GitHub.Logging.dll.meta
+      projectPath: Assets\Plugins\GitHub\Editor\GitHub.Logging.dll.meta
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Assets\Plugins\GitHub\Editor\GitHub.Unity.dll
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Assets\Plugins\GitHub\Editor\GitHub.Unity.dll
+      projectPath: Assets\Plugins\GitHub\Editor\GitHub.Unity.dll
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Assets\Plugins\GitHub\Editor\GitHub.Unity.dll.mdb
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Assets\Plugins\GitHub\Editor\GitHub.Unity.dll.mdb
+      projectPath: Assets\Plugins\GitHub\Editor\GitHub.Unity.dll.mdb
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Assets\Plugins\GitHub\Editor\GitHub.Unity.dll.mdb.meta
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Assets\Plugins\GitHub\Editor\GitHub.Unity.dll.mdb.meta
+      projectPath: Assets\Plugins\GitHub\Editor\GitHub.Unity.dll.mdb.meta
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Assets\Plugins\GitHub\Editor\GitHub.Unity.dll.meta
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Assets\Plugins\GitHub\Editor\GitHub.Unity.dll.meta
+      projectPath: Assets\Plugins\GitHub\Editor\GitHub.Unity.dll.meta
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Assets\Plugins\GitHub\Editor\ICSharpCode.SharpZipLib.dll
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Assets\Plugins\GitHub\Editor\ICSharpCode.SharpZipLib.dll
+      projectPath: Assets\Plugins\GitHub\Editor\ICSharpCode.SharpZipLib.dll
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Assets\Plugins\GitHub\Editor\ICSharpCode.SharpZipLib.dll.meta
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Assets\Plugins\GitHub\Editor\ICSharpCode.SharpZipLib.dll.meta
+      projectPath: Assets\Plugins\GitHub\Editor\ICSharpCode.SharpZipLib.dll.meta
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Assets\Plugins\GitHub\Editor\Mono.Posix.dll
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Assets\Plugins\GitHub\Editor\Mono.Posix.dll
+      projectPath: Assets\Plugins\GitHub\Editor\Mono.Posix.dll
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Assets\Plugins\GitHub\Editor\Mono.Posix.dll.meta
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Assets\Plugins\GitHub\Editor\Mono.Posix.dll.meta
+      projectPath: Assets\Plugins\GitHub\Editor\Mono.Posix.dll.meta
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Assets\Plugins\GitHub\Editor\Mono.Security.dll
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Assets\Plugins\GitHub\Editor\Mono.Security.dll
+      projectPath: Assets\Plugins\GitHub\Editor\Mono.Security.dll
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Assets\Plugins\GitHub\Editor\Mono.Security.dll.meta
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Assets\Plugins\GitHub\Editor\Mono.Security.dll.meta
+      projectPath: Assets\Plugins\GitHub\Editor\Mono.Security.dll.meta
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Assets\Plugins\GitHub\Editor\PlatformResources.meta
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Assets\Plugins\GitHub\Editor\PlatformResources.meta
+      projectPath: Assets\Plugins\GitHub\Editor\PlatformResources.meta
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Assets\Plugins\GitHub\Editor\PlatformResources\linux.meta
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Assets\Plugins\GitHub\Editor\PlatformResources\linux.meta
+      projectPath: Assets\Plugins\GitHub\Editor\PlatformResources\linux.meta
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Assets\Plugins\GitHub\Editor\PlatformResources\linux\git-lfs.zip
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Assets\Plugins\GitHub\Editor\PlatformResources\linux\git-lfs.zip
+      projectPath: Assets\Plugins\GitHub\Editor\PlatformResources\linux\git-lfs.zip
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Assets\Plugins\GitHub\Editor\PlatformResources\linux\git-lfs.zip.md5
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Assets\Plugins\GitHub\Editor\PlatformResources\linux\git-lfs.zip.md5
+      projectPath: Assets\Plugins\GitHub\Editor\PlatformResources\linux\git-lfs.zip.md5
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Assets\Plugins\GitHub\Editor\PlatformResources\linux\git-lfs.zip.md5.meta
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Assets\Plugins\GitHub\Editor\PlatformResources\linux\git-lfs.zip.md5.meta
+      projectPath: Assets\Plugins\GitHub\Editor\PlatformResources\linux\git-lfs.zip.md5.meta
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Assets\Plugins\GitHub\Editor\PlatformResources\linux\git-lfs.zip.meta
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Assets\Plugins\GitHub\Editor\PlatformResources\linux\git-lfs.zip.meta
+      projectPath: Assets\Plugins\GitHub\Editor\PlatformResources\linux\git-lfs.zip.meta
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Assets\Plugins\GitHub\Editor\PlatformResources\linux\gitconfig
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Assets\Plugins\GitHub\Editor\PlatformResources\linux\gitconfig
+      projectPath: Assets\Plugins\GitHub\Editor\PlatformResources\linux\gitconfig
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Assets\Plugins\GitHub\Editor\PlatformResources\linux\gitconfig.meta
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Assets\Plugins\GitHub\Editor\PlatformResources\linux\gitconfig.meta
+      projectPath: Assets\Plugins\GitHub\Editor\PlatformResources\linux\gitconfig.meta
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Assets\Plugins\GitHub\Editor\PlatformResources\mac.meta
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Assets\Plugins\GitHub\Editor\PlatformResources\mac.meta
+      projectPath: Assets\Plugins\GitHub\Editor\PlatformResources\mac.meta
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Assets\Plugins\GitHub\Editor\PlatformResources\mac\git-lfs.zip
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Assets\Plugins\GitHub\Editor\PlatformResources\mac\git-lfs.zip
+      projectPath: Assets\Plugins\GitHub\Editor\PlatformResources\mac\git-lfs.zip
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Assets\Plugins\GitHub\Editor\PlatformResources\mac\git-lfs.zip.md5
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Assets\Plugins\GitHub\Editor\PlatformResources\mac\git-lfs.zip.md5
+      projectPath: Assets\Plugins\GitHub\Editor\PlatformResources\mac\git-lfs.zip.md5
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Assets\Plugins\GitHub\Editor\PlatformResources\mac\git-lfs.zip.md5.meta
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Assets\Plugins\GitHub\Editor\PlatformResources\mac\git-lfs.zip.md5.meta
+      projectPath: Assets\Plugins\GitHub\Editor\PlatformResources\mac\git-lfs.zip.md5.meta
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Assets\Plugins\GitHub\Editor\PlatformResources\mac\git-lfs.zip.meta
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Assets\Plugins\GitHub\Editor\PlatformResources\mac\git-lfs.zip.meta
+      projectPath: Assets\Plugins\GitHub\Editor\PlatformResources\mac\git-lfs.zip.meta
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Assets\Plugins\GitHub\Editor\PlatformResources\mac\gitconfig
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Assets\Plugins\GitHub\Editor\PlatformResources\mac\gitconfig
+      projectPath: Assets\Plugins\GitHub\Editor\PlatformResources\mac\gitconfig
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Assets\Plugins\GitHub\Editor\PlatformResources\mac\gitconfig.meta
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Assets\Plugins\GitHub\Editor\PlatformResources\mac\gitconfig.meta
+      projectPath: Assets\Plugins\GitHub\Editor\PlatformResources\mac\gitconfig.meta
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Assets\Plugins\GitHub\Editor\PlatformResources\windows.meta
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Assets\Plugins\GitHub\Editor\PlatformResources\windows.meta
+      projectPath: Assets\Plugins\GitHub\Editor\PlatformResources\windows.meta
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Assets\Plugins\GitHub\Editor\PlatformResources\windows\git-lfs.zip
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Assets\Plugins\GitHub\Editor\PlatformResources\windows\git-lfs.zip
+      projectPath: Assets\Plugins\GitHub\Editor\PlatformResources\windows\git-lfs.zip
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Assets\Plugins\GitHub\Editor\PlatformResources\windows\git-lfs.zip.md5
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Assets\Plugins\GitHub\Editor\PlatformResources\windows\git-lfs.zip.md5
+      projectPath: Assets\Plugins\GitHub\Editor\PlatformResources\windows\git-lfs.zip.md5
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Assets\Plugins\GitHub\Editor\PlatformResources\windows\git-lfs.zip.md5.meta
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Assets\Plugins\GitHub\Editor\PlatformResources\windows\git-lfs.zip.md5.meta
+      projectPath: Assets\Plugins\GitHub\Editor\PlatformResources\windows\git-lfs.zip.md5.meta
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Assets\Plugins\GitHub\Editor\PlatformResources\windows\git-lfs.zip.meta
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Assets\Plugins\GitHub\Editor\PlatformResources\windows\git-lfs.zip.meta
+      projectPath: Assets\Plugins\GitHub\Editor\PlatformResources\windows\git-lfs.zip.meta
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Assets\Plugins\GitHub\Editor\PlatformResources\windows\git.zip
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Assets\Plugins\GitHub\Editor\PlatformResources\windows\git.zip
+      projectPath: Assets\Plugins\GitHub\Editor\PlatformResources\windows\git.zip
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Assets\Plugins\GitHub\Editor\PlatformResources\windows\git.zip.md5
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Assets\Plugins\GitHub\Editor\PlatformResources\windows\git.zip.md5
+      projectPath: Assets\Plugins\GitHub\Editor\PlatformResources\windows\git.zip.md5
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Assets\Plugins\GitHub\Editor\PlatformResources\windows\git.zip.md5.meta
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Assets\Plugins\GitHub\Editor\PlatformResources\windows\git.zip.md5.meta
+      projectPath: Assets\Plugins\GitHub\Editor\PlatformResources\windows\git.zip.md5.meta
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Assets\Plugins\GitHub\Editor\PlatformResources\windows\git.zip.meta
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Assets\Plugins\GitHub\Editor\PlatformResources\windows\git.zip.meta
+      projectPath: Assets\Plugins\GitHub\Editor\PlatformResources\windows\git.zip.meta
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Assets\Plugins\GitHub\Editor\PlatformResources\windows\gitconfig
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Assets\Plugins\GitHub\Editor\PlatformResources\windows\gitconfig
+      projectPath: Assets\Plugins\GitHub\Editor\PlatformResources\windows\gitconfig
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Assets\Plugins\GitHub\Editor\PlatformResources\windows\gitconfig.meta
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Assets\Plugins\GitHub\Editor\PlatformResources\windows\gitconfig.meta
+      projectPath: Assets\Plugins\GitHub\Editor\PlatformResources\windows\gitconfig.meta
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Assets\Plugins\GitHub\Editor\ReadOnlyCollectionsInterfaces.dll
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Assets\Plugins\GitHub\Editor\ReadOnlyCollectionsInterfaces.dll
+      projectPath: Assets\Plugins\GitHub\Editor\ReadOnlyCollectionsInterfaces.dll
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Assets\Plugins\GitHub\Editor\ReadOnlyCollectionsInterfaces.dll.meta
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Assets\Plugins\GitHub\Editor\ReadOnlyCollectionsInterfaces.dll.meta
+      projectPath: Assets\Plugins\GitHub\Editor\ReadOnlyCollectionsInterfaces.dll.meta
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Assets\Plugins\GitHub\Editor\Resources.meta
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Assets\Plugins\GitHub\Editor\Resources.meta
+      projectPath: Assets\Plugins\GitHub\Editor\Resources.meta
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Assets\Plugins\GitHub\Editor\Resources\octorun.zip
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Assets\Plugins\GitHub\Editor\Resources\octorun.zip
+      projectPath: Assets\Plugins\GitHub\Editor\Resources\octorun.zip
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Assets\Plugins\GitHub\Editor\Resources\octorun.zip.md5
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Assets\Plugins\GitHub\Editor\Resources\octorun.zip.md5
+      projectPath: Assets\Plugins\GitHub\Editor\Resources\octorun.zip.md5
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Assets\Plugins\GitHub\Editor\Resources\octorun.zip.md5.meta
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Assets\Plugins\GitHub\Editor\Resources\octorun.zip.md5.meta
+      projectPath: Assets\Plugins\GitHub\Editor\Resources\octorun.zip.md5.meta
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Assets\Plugins\GitHub\Editor\Resources\octorun.zip.meta
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Assets\Plugins\GitHub\Editor\Resources\octorun.zip.meta
+      projectPath: Assets\Plugins\GitHub\Editor\Resources\octorun.zip.meta
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Assets\Plugins\GitHub\Editor\System.Threading.dll
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Assets\Plugins\GitHub\Editor\System.Threading.dll
+      projectPath: Assets\Plugins\GitHub\Editor\System.Threading.dll
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Assets\Plugins\GitHub\Editor\System.Threading.dll.meta
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Assets\Plugins\GitHub\Editor\System.Threading.dll.meta
+      projectPath: Assets\Plugins\GitHub\Editor\System.Threading.dll.meta
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Assets\Plugins\GitHub\Editor\libsfw.bundle
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Assets\Plugins\GitHub\Editor\libsfw.bundle
+      projectPath: Assets\Plugins\GitHub\Editor\libsfw.bundle
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Assets\Plugins\GitHub\Editor\libsfw.bundle.meta
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Assets\Plugins\GitHub\Editor\libsfw.bundle.meta
+      projectPath: Assets\Plugins\GitHub\Editor\libsfw.bundle.meta
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Assets\Plugins\GitHub\Editor\libsfw.so
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Assets\Plugins\GitHub\Editor\libsfw.so
+      projectPath: Assets\Plugins\GitHub\Editor\libsfw.so
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Assets\Plugins\GitHub\Editor\libsfw.so.meta
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Assets\Plugins\GitHub\Editor\libsfw.so.meta
+      projectPath: Assets\Plugins\GitHub\Editor\libsfw.so.meta
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Assets\Plugins\GitHub\Editor\sfw.net.dll
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Assets\Plugins\GitHub\Editor\sfw.net.dll
+      projectPath: Assets\Plugins\GitHub\Editor\sfw.net.dll
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Assets\Plugins\GitHub\Editor\sfw.net.dll.meta
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Assets\Plugins\GitHub\Editor\sfw.net.dll.meta
+      projectPath: Assets\Plugins\GitHub\Editor\sfw.net.dll.meta
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Assets\Plugins\GitHub\Editor\x64.meta
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Assets\Plugins\GitHub\Editor\x64.meta
+      projectPath: Assets\Plugins\GitHub\Editor\x64.meta
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Assets\Plugins\GitHub\Editor\x64\pthreadVC2.dll
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Assets\Plugins\GitHub\Editor\x64\pthreadVC2.dll
+      projectPath: Assets\Plugins\GitHub\Editor\x64\pthreadVC2.dll
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Assets\Plugins\GitHub\Editor\x64\pthreadVC2.dll.meta
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Assets\Plugins\GitHub\Editor\x64\pthreadVC2.dll.meta
+      projectPath: Assets\Plugins\GitHub\Editor\x64\pthreadVC2.dll.meta
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Assets\Plugins\GitHub\Editor\x64\sfw_x64.dll
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Assets\Plugins\GitHub\Editor\x64\sfw_x64.dll
+      projectPath: Assets\Plugins\GitHub\Editor\x64\sfw_x64.dll
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Assets\Plugins\GitHub\Editor\x64\sfw_x64.dll.meta
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Assets\Plugins\GitHub\Editor\x64\sfw_x64.dll.meta
+      projectPath: Assets\Plugins\GitHub\Editor\x64\sfw_x64.dll.meta
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Assets\Plugins\GitHub\Editor\x86.meta
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Assets\Plugins\GitHub\Editor\x86.meta
+      projectPath: Assets\Plugins\GitHub\Editor\x86.meta
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Assets\Plugins\GitHub\Editor\x86\pthreadVC2.dll
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Assets\Plugins\GitHub\Editor\x86\pthreadVC2.dll
+      projectPath: Assets\Plugins\GitHub\Editor\x86\pthreadVC2.dll
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Assets\Plugins\GitHub\Editor\x86\pthreadVC2.dll.meta
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Assets\Plugins\GitHub\Editor\x86\pthreadVC2.dll.meta
+      projectPath: Assets\Plugins\GitHub\Editor\x86\pthreadVC2.dll.meta
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Assets\Plugins\GitHub\Editor\x86\sfw_x86.dll
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Assets\Plugins\GitHub\Editor\x86\sfw_x86.dll
+      projectPath: Assets\Plugins\GitHub\Editor\x86\sfw_x86.dll
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Assets\Plugins\GitHub\Editor\x86\sfw_x86.dll.meta
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Assets\Plugins\GitHub\Editor\x86\sfw_x86.dll.meta
+      projectPath: Assets\Plugins\GitHub\Editor\x86\sfw_x86.dll.meta
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\AnnotationManager
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\AnnotationManager
+      projectPath: Library\AnnotationManager
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\AssetImportState
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\AssetImportState
+      projectPath: Library\AssetImportState
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\BuildPlayer.prefs
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\BuildPlayer.prefs
+      projectPath: Library\BuildPlayer.prefs
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\BuildSettings.asset
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\BuildSettings.asset
+      projectPath: Library\BuildSettings.asset
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\CurrentLayout.dwlt
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\CurrentLayout.dwlt
+      projectPath: Library\CurrentLayout.dwlt
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\EditorInstance.json
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\EditorInstance.json
+      projectPath: Library\EditorInstance.json
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\EditorUserBuildSettings.asset
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\EditorUserBuildSettings.asset
+      projectPath: Library\EditorUserBuildSettings.asset
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\EditorUserSettings.asset
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\EditorUserSettings.asset
+      projectPath: Library\EditorUserSettings.asset
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\InspectorExpandedItems.asset
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\InspectorExpandedItems.asset
+      projectPath: Library\InspectorExpandedItems.asset
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\LibraryFormatVersion.txt
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\LibraryFormatVersion.txt
+      projectPath: Library\LibraryFormatVersion.txt
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\MonoManager.asset
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\MonoManager.asset
+      projectPath: Library\MonoManager.asset
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\ScriptAssemblies\BuiltinAssemblies.stamp
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\ScriptAssemblies\BuiltinAssemblies.stamp
+      projectPath: Library\ScriptAssemblies\BuiltinAssemblies.stamp
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\ScriptMapper
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\ScriptMapper
+      projectPath: Library\ScriptMapper
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\ShaderCache\4\4c5bec3ba92e067587d956ba7429bcbe.bin
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\ShaderCache\4\4c5bec3ba92e067587d956ba7429bcbe.bin
+      projectPath: Library\ShaderCache\4\4c5bec3ba92e067587d956ba7429bcbe.bin
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\ShaderCache\7\7e4094eca968913e5dd832a22828687c.bin
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\ShaderCache\7\7e4094eca968913e5dd832a22828687c.bin
+      projectPath: Library\ShaderCache\7\7e4094eca968913e5dd832a22828687c.bin
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\ShaderCache\8\8a105bb5070930b4470c9d46d4d92685.bin
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\ShaderCache\8\8a105bb5070930b4470c9d46d4d92685.bin
+      projectPath: Library\ShaderCache\8\8a105bb5070930b4470c9d46d4d92685.bin
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\ShaderCache\9\966f6a71797cc70c9b0d7d0f05e49c9e.bin
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\ShaderCache\9\966f6a71797cc70c9b0d7d0f05e49c9e.bin
+      projectPath: Library\ShaderCache\9\966f6a71797cc70c9b0d7d0f05e49c9e.bin
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\ShaderCache\b\b25ee7c3889b87b0399973e84c60a262.bin
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\ShaderCache\b\b25ee7c3889b87b0399973e84c60a262.bin
+      projectPath: Library\ShaderCache\b\b25ee7c3889b87b0399973e84c60a262.bin
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\ShaderCache\c\ce8ff88b7e2b921ee2af38074d3aeeef.bin
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\ShaderCache\c\ce8ff88b7e2b921ee2af38074d3aeeef.bin
+      projectPath: Library\ShaderCache\c\ce8ff88b7e2b921ee2af38074d3aeeef.bin
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\ShaderCache\e\ebdce5cbed610d503bb312de7d4355b8.bin
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\ShaderCache\e\ebdce5cbed610d503bb312de7d4355b8.bin
+      projectPath: Library\ShaderCache\e\ebdce5cbed610d503bb312de7d4355b8.bin
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\ShaderCache\f\fc24d0e2a7be9bf4e7fbdfdae42701db.bin
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\ShaderCache\f\fc24d0e2a7be9bf4e7fbdfdae42701db.bin
+      projectPath: Library\ShaderCache\f\fc24d0e2a7be9bf4e7fbdfdae42701db.bin
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\SpriteAtlasDatabase.asset
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\SpriteAtlasDatabase.asset
+      projectPath: Library\SpriteAtlasDatabase.asset
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\UnityAssemblies\version.txt
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\UnityAssemblies\version.txt
+      projectPath: Library\UnityAssemblies\version.txt
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\assetDatabase3
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\assetDatabase3
+      projectPath: Library\assetDatabase3
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\gfu\cache\gitlocks.yaml
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\gfu\cache\gitlocks.yaml
+      projectPath: Library\gfu\cache\gitlocks.yaml
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\gfu\cache\gitlog.yaml
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\gfu\cache\gitlog.yaml
+      projectPath: Library\gfu\cache\gitlog.yaml
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\gfu\cache\gitstatusentries.yaml
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\gfu\cache\gitstatusentries.yaml
+      projectPath: Library\gfu\cache\gitstatusentries.yaml
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\gfu\cache\gittrackingstatus.yaml
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\gfu\cache\gittrackingstatus.yaml
+      projectPath: Library\gfu\cache\gittrackingstatus.yaml
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\gfu\cache\gituser.yaml
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\gfu\cache\gituser.yaml
+      projectPath: Library\gfu\cache\gituser.yaml
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\gfu\cache\repoinfo.yaml
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\gfu\cache\repoinfo.yaml
+      projectPath: Library\gfu\cache\repoinfo.yaml
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\00\00000000000000001000000000000000
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\00\00000000000000001000000000000000
+      projectPath: Library\metadata\00\00000000000000001000000000000000
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\00\00000000000000001000000000000000.info
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\00\00000000000000001000000000000000.info
+      projectPath: Library\metadata\00\00000000000000001000000000000000.info
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\00\00000000000000002000000000000000
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\00\00000000000000002000000000000000
+      projectPath: Library\metadata\00\00000000000000002000000000000000
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\00\00000000000000002000000000000000.info
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\00\00000000000000002000000000000000.info
+      projectPath: Library\metadata\00\00000000000000002000000000000000.info
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\00\00000000000000003000000000000000
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\00\00000000000000003000000000000000
+      projectPath: Library\metadata\00\00000000000000003000000000000000
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\00\00000000000000003000000000000000.info
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\00\00000000000000003000000000000000.info
+      projectPath: Library\metadata\00\00000000000000003000000000000000.info
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\00\00000000000000004000000000000000
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\00\00000000000000004000000000000000
+      projectPath: Library\metadata\00\00000000000000004000000000000000
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\00\00000000000000004000000000000000.info
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\00\00000000000000004000000000000000.info
+      projectPath: Library\metadata\00\00000000000000004000000000000000.info
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\00\00000000000000004100000000000000
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\00\00000000000000004100000000000000
+      projectPath: Library\metadata\00\00000000000000004100000000000000
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\00\00000000000000004100000000000000.info
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\00\00000000000000004100000000000000.info
+      projectPath: Library\metadata\00\00000000000000004100000000000000.info
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\00\00000000000000005000000000000000
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\00\00000000000000005000000000000000
+      projectPath: Library\metadata\00\00000000000000005000000000000000
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\00\00000000000000005000000000000000.info
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\00\00000000000000005000000000000000.info
+      projectPath: Library\metadata\00\00000000000000005000000000000000.info
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\00\00000000000000005100000000000000
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\00\00000000000000005100000000000000
+      projectPath: Library\metadata\00\00000000000000005100000000000000
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\00\00000000000000005100000000000000.info
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\00\00000000000000005100000000000000.info
+      projectPath: Library\metadata\00\00000000000000005100000000000000.info
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\00\00000000000000006000000000000000
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\00\00000000000000006000000000000000
+      projectPath: Library\metadata\00\00000000000000006000000000000000
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\00\00000000000000006000000000000000.info
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\00\00000000000000006000000000000000.info
+      projectPath: Library\metadata\00\00000000000000006000000000000000.info
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\00\00000000000000006100000000000000
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\00\00000000000000006100000000000000
+      projectPath: Library\metadata\00\00000000000000006100000000000000
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\00\00000000000000006100000000000000.info
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\00\00000000000000006100000000000000.info
+      projectPath: Library\metadata\00\00000000000000006100000000000000.info
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\00\00000000000000007000000000000000
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\00\00000000000000007000000000000000
+      projectPath: Library\metadata\00\00000000000000007000000000000000
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\00\00000000000000007000000000000000.info
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\00\00000000000000007000000000000000.info
+      projectPath: Library\metadata\00\00000000000000007000000000000000.info
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\00\00000000000000007100000000000000
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\00\00000000000000007100000000000000
+      projectPath: Library\metadata\00\00000000000000007100000000000000
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\00\00000000000000007100000000000000.info
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\00\00000000000000007100000000000000.info
+      projectPath: Library\metadata\00\00000000000000007100000000000000.info
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\00\00000000000000008000000000000000
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\00\00000000000000008000000000000000
+      projectPath: Library\metadata\00\00000000000000008000000000000000
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\00\00000000000000008000000000000000.info
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\00\00000000000000008000000000000000.info
+      projectPath: Library\metadata\00\00000000000000008000000000000000.info
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\00\00000000000000009000000000000000
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\00\00000000000000009000000000000000
+      projectPath: Library\metadata\00\00000000000000009000000000000000
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\00\00000000000000009000000000000000.info
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\00\00000000000000009000000000000000.info
+      projectPath: Library\metadata\00\00000000000000009000000000000000.info
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\00\0000000000000000a000000000000000
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\00\0000000000000000a000000000000000
+      projectPath: Library\metadata\00\0000000000000000a000000000000000
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\00\0000000000000000a000000000000000.info
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\00\0000000000000000a000000000000000.info
+      projectPath: Library\metadata\00\0000000000000000a000000000000000.info
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\00\0000000000000000a100000000000000
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\00\0000000000000000a100000000000000
+      projectPath: Library\metadata\00\0000000000000000a100000000000000
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\00\0000000000000000a100000000000000.info
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\00\0000000000000000a100000000000000.info
+      projectPath: Library\metadata\00\0000000000000000a100000000000000.info
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\00\0000000000000000b000000000000000
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\00\0000000000000000b000000000000000
+      projectPath: Library\metadata\00\0000000000000000b000000000000000
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\00\0000000000000000b000000000000000.info
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\00\0000000000000000b000000000000000.info
+      projectPath: Library\metadata\00\0000000000000000b000000000000000.info
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\00\0000000000000000c000000000000000
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\00\0000000000000000c000000000000000
+      projectPath: Library\metadata\00\0000000000000000c000000000000000
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\00\0000000000000000c000000000000000.info
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\00\0000000000000000c000000000000000.info
+      projectPath: Library\metadata\00\0000000000000000c000000000000000.info
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\01\0188ec438976e5849b40a2c1ce5f20f9
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\01\0188ec438976e5849b40a2c1ce5f20f9
+      projectPath: Library\metadata\01\0188ec438976e5849b40a2c1ce5f20f9
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\01\0188ec438976e5849b40a2c1ce5f20f9.info
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\01\0188ec438976e5849b40a2c1ce5f20f9.info
+      projectPath: Library\metadata\01\0188ec438976e5849b40a2c1ce5f20f9.info
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\0d\0d3bb855445e36e479c85976fc88383a
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\0d\0d3bb855445e36e479c85976fc88383a
+      projectPath: Library\metadata\0d\0d3bb855445e36e479c85976fc88383a
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\0d\0d3bb855445e36e479c85976fc88383a.info
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\0d\0d3bb855445e36e479c85976fc88383a.info
+      projectPath: Library\metadata\0d\0d3bb855445e36e479c85976fc88383a.info
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\12\12fd8a0055b84bb59e84c9835a37e333
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\12\12fd8a0055b84bb59e84c9835a37e333
+      projectPath: Library\metadata\12\12fd8a0055b84bb59e84c9835a37e333
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\12\12fd8a0055b84bb59e84c9835a37e333.info
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\12\12fd8a0055b84bb59e84c9835a37e333.info
+      projectPath: Library\metadata\12\12fd8a0055b84bb59e84c9835a37e333.info
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\13\136dc24f151211d438acee17aff4e934
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\13\136dc24f151211d438acee17aff4e934
+      projectPath: Library\metadata\13\136dc24f151211d438acee17aff4e934
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\13\136dc24f151211d438acee17aff4e934.info
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\13\136dc24f151211d438acee17aff4e934.info
+      projectPath: Library\metadata\13\136dc24f151211d438acee17aff4e934.info
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\14\1404afef655b1ce49bfa0ef83799bf50
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\14\1404afef655b1ce49bfa0ef83799bf50
+      projectPath: Library\metadata\14\1404afef655b1ce49bfa0ef83799bf50
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\14\1404afef655b1ce49bfa0ef83799bf50.info
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\14\1404afef655b1ce49bfa0ef83799bf50.info
+      projectPath: Library\metadata\14\1404afef655b1ce49bfa0ef83799bf50.info
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\15\151a1d946b98deb4b98445400983ba92
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\15\151a1d946b98deb4b98445400983ba92
+      projectPath: Library\metadata\15\151a1d946b98deb4b98445400983ba92
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\15\151a1d946b98deb4b98445400983ba92.info
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\15\151a1d946b98deb4b98445400983ba92.info
+      projectPath: Library\metadata\15\151a1d946b98deb4b98445400983ba92.info
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\15\15ca2bebf173f2d4484686a03a45b56d
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\15\15ca2bebf173f2d4484686a03a45b56d
+      projectPath: Library\metadata\15\15ca2bebf173f2d4484686a03a45b56d
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\15\15ca2bebf173f2d4484686a03a45b56d.info
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\15\15ca2bebf173f2d4484686a03a45b56d.info
+      projectPath: Library\metadata\15\15ca2bebf173f2d4484686a03a45b56d.info
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\1b\1bf89c9fbca28724a8d8fbcf427c47f4
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\1b\1bf89c9fbca28724a8d8fbcf427c47f4
+      projectPath: Library\metadata\1b\1bf89c9fbca28724a8d8fbcf427c47f4
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\1b\1bf89c9fbca28724a8d8fbcf427c47f4.info
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\1b\1bf89c9fbca28724a8d8fbcf427c47f4.info
+      projectPath: Library\metadata\1b\1bf89c9fbca28724a8d8fbcf427c47f4.info
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\1c\1c6d1fbb51834b64847b1b73a75bfc77
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\1c\1c6d1fbb51834b64847b1b73a75bfc77
+      projectPath: Library\metadata\1c\1c6d1fbb51834b64847b1b73a75bfc77
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\1c\1c6d1fbb51834b64847b1b73a75bfc77.info
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\1c\1c6d1fbb51834b64847b1b73a75bfc77.info
+      projectPath: Library\metadata\1c\1c6d1fbb51834b64847b1b73a75bfc77.info
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\21\21206c65839f84d0e9ae14bc1fdc68db
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\21\21206c65839f84d0e9ae14bc1fdc68db
+      projectPath: Library\metadata\21\21206c65839f84d0e9ae14bc1fdc68db
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\21\21206c65839f84d0e9ae14bc1fdc68db.info
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\21\21206c65839f84d0e9ae14bc1fdc68db.info
+      projectPath: Library\metadata\21\21206c65839f84d0e9ae14bc1fdc68db.info
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\21\21eff446d50eaf44a85985cd4c0b6fa1
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\21\21eff446d50eaf44a85985cd4c0b6fa1
+      projectPath: Library\metadata\21\21eff446d50eaf44a85985cd4c0b6fa1
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\21\21eff446d50eaf44a85985cd4c0b6fa1.info
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\21\21eff446d50eaf44a85985cd4c0b6fa1.info
+      projectPath: Library\metadata\21\21eff446d50eaf44a85985cd4c0b6fa1.info
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\23\23c8bee69b591054094d32918f98facd
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\23\23c8bee69b591054094d32918f98facd
+      projectPath: Library\metadata\23\23c8bee69b591054094d32918f98facd
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\23\23c8bee69b591054094d32918f98facd.info
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\23\23c8bee69b591054094d32918f98facd.info
+      projectPath: Library\metadata\23\23c8bee69b591054094d32918f98facd.info
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\26\2682a692a2be7e14e901a738c7806da0
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\26\2682a692a2be7e14e901a738c7806da0
+      projectPath: Library\metadata\26\2682a692a2be7e14e901a738c7806da0
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\26\2682a692a2be7e14e901a738c7806da0.info
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\26\2682a692a2be7e14e901a738c7806da0.info
+      projectPath: Library\metadata\26\2682a692a2be7e14e901a738c7806da0.info
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\2e\2e13feb16b2a8a640814ec3604feffe5
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\2e\2e13feb16b2a8a640814ec3604feffe5
+      projectPath: Library\metadata\2e\2e13feb16b2a8a640814ec3604feffe5
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\2e\2e13feb16b2a8a640814ec3604feffe5.info
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\2e\2e13feb16b2a8a640814ec3604feffe5.info
+      projectPath: Library\metadata\2e\2e13feb16b2a8a640814ec3604feffe5.info
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\2f\2fe3476eabbbb6c448e6b55a2cc471f5
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\2f\2fe3476eabbbb6c448e6b55a2cc471f5
+      projectPath: Library\metadata\2f\2fe3476eabbbb6c448e6b55a2cc471f5
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\2f\2fe3476eabbbb6c448e6b55a2cc471f5.info
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\2f\2fe3476eabbbb6c448e6b55a2cc471f5.info
+      projectPath: Library\metadata\2f\2fe3476eabbbb6c448e6b55a2cc471f5.info
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\32\32188fd89022c154c81befa2f0e00be0
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\32\32188fd89022c154c81befa2f0e00be0
+      projectPath: Library\metadata\32\32188fd89022c154c81befa2f0e00be0
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\32\32188fd89022c154c81befa2f0e00be0.info
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\32\32188fd89022c154c81befa2f0e00be0.info
+      projectPath: Library\metadata\32\32188fd89022c154c81befa2f0e00be0.info
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\32\328cc881519068e4eb7db4bb907ad2d9
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\32\328cc881519068e4eb7db4bb907ad2d9
+      projectPath: Library\metadata\32\328cc881519068e4eb7db4bb907ad2d9
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\32\328cc881519068e4eb7db4bb907ad2d9.info
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\32\328cc881519068e4eb7db4bb907ad2d9.info
+      projectPath: Library\metadata\32\328cc881519068e4eb7db4bb907ad2d9.info
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\34\342ebfa2c8e06a24c8b445cf2f2d9784
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\34\342ebfa2c8e06a24c8b445cf2f2d9784
+      projectPath: Library\metadata\34\342ebfa2c8e06a24c8b445cf2f2d9784
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\34\342ebfa2c8e06a24c8b445cf2f2d9784.info
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\34\342ebfa2c8e06a24c8b445cf2f2d9784.info
+      projectPath: Library\metadata\34\342ebfa2c8e06a24c8b445cf2f2d9784.info
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\34\349a2940a5f0bb2428b4689b369e3b60
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\34\349a2940a5f0bb2428b4689b369e3b60
+      projectPath: Library\metadata\34\349a2940a5f0bb2428b4689b369e3b60
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\34\349a2940a5f0bb2428b4689b369e3b60.info
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\34\349a2940a5f0bb2428b4689b369e3b60.info
+      projectPath: Library\metadata\34\349a2940a5f0bb2428b4689b369e3b60.info
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\36\36f73b0d4842ba7448027c0215f522b1
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\36\36f73b0d4842ba7448027c0215f522b1
+      projectPath: Library\metadata\36\36f73b0d4842ba7448027c0215f522b1
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\36\36f73b0d4842ba7448027c0215f522b1.info
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\36\36f73b0d4842ba7448027c0215f522b1.info
+      projectPath: Library\metadata\36\36f73b0d4842ba7448027c0215f522b1.info
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\38\38c8faf1788024c02930a0c68a6e0edc
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\38\38c8faf1788024c02930a0c68a6e0edc
+      projectPath: Library\metadata\38\38c8faf1788024c02930a0c68a6e0edc
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\38\38c8faf1788024c02930a0c68a6e0edc.info
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\38\38c8faf1788024c02930a0c68a6e0edc.info
+      projectPath: Library\metadata\38\38c8faf1788024c02930a0c68a6e0edc.info
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\40\405b9b51bb344a128608d968297df79c
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\40\405b9b51bb344a128608d968297df79c
+      projectPath: Library\metadata\40\405b9b51bb344a128608d968297df79c
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\40\405b9b51bb344a128608d968297df79c.info
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\40\405b9b51bb344a128608d968297df79c.info
+      projectPath: Library\metadata\40\405b9b51bb344a128608d968297df79c.info
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\41\4113173d5e95493ab8765d7b08371de4
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\41\4113173d5e95493ab8765d7b08371de4
+      projectPath: Library\metadata\41\4113173d5e95493ab8765d7b08371de4
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\41\4113173d5e95493ab8765d7b08371de4.info
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\41\4113173d5e95493ab8765d7b08371de4.info
+      projectPath: Library\metadata\41\4113173d5e95493ab8765d7b08371de4.info
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\48\48c22d5d7479fcb49ab3be0cdd2ccec0
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\48\48c22d5d7479fcb49ab3be0cdd2ccec0
+      projectPath: Library\metadata\48\48c22d5d7479fcb49ab3be0cdd2ccec0
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\48\48c22d5d7479fcb49ab3be0cdd2ccec0.info
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\48\48c22d5d7479fcb49ab3be0cdd2ccec0.info
+      projectPath: Library\metadata\48\48c22d5d7479fcb49ab3be0cdd2ccec0.info
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\49\49f5766d0d4954f44b85d4bbd7131677
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\49\49f5766d0d4954f44b85d4bbd7131677
+      projectPath: Library\metadata\49\49f5766d0d4954f44b85d4bbd7131677
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\49\49f5766d0d4954f44b85d4bbd7131677.info
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\49\49f5766d0d4954f44b85d4bbd7131677.info
+      projectPath: Library\metadata\49\49f5766d0d4954f44b85d4bbd7131677.info
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\4b\4b3fa4bde7f1451a8218c03ee6a8ded8
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\4b\4b3fa4bde7f1451a8218c03ee6a8ded8
+      projectPath: Library\metadata\4b\4b3fa4bde7f1451a8218c03ee6a8ded8
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\4b\4b3fa4bde7f1451a8218c03ee6a8ded8.info
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\4b\4b3fa4bde7f1451a8218c03ee6a8ded8.info
+      projectPath: Library\metadata\4b\4b3fa4bde7f1451a8218c03ee6a8ded8.info
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\4b\4ba2329b63d54f0187bcaa12486b1b0f
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\4b\4ba2329b63d54f0187bcaa12486b1b0f
+      projectPath: Library\metadata\4b\4ba2329b63d54f0187bcaa12486b1b0f
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\4b\4ba2329b63d54f0187bcaa12486b1b0f.info
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\4b\4ba2329b63d54f0187bcaa12486b1b0f.info
+      projectPath: Library\metadata\4b\4ba2329b63d54f0187bcaa12486b1b0f.info
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\51\517af1b5b81b93b43b9745d58f017562
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\51\517af1b5b81b93b43b9745d58f017562
+      projectPath: Library\metadata\51\517af1b5b81b93b43b9745d58f017562
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\51\517af1b5b81b93b43b9745d58f017562.info
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\51\517af1b5b81b93b43b9745d58f017562.info
+      projectPath: Library\metadata\51\517af1b5b81b93b43b9745d58f017562.info
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\53\53ebcfaa2e1e4e2dbc85882cd5a73fa1
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\53\53ebcfaa2e1e4e2dbc85882cd5a73fa1
+      projectPath: Library\metadata\53\53ebcfaa2e1e4e2dbc85882cd5a73fa1
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\53\53ebcfaa2e1e4e2dbc85882cd5a73fa1.info
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\53\53ebcfaa2e1e4e2dbc85882cd5a73fa1.info
+      projectPath: Library\metadata\53\53ebcfaa2e1e4e2dbc85882cd5a73fa1.info
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\57\5782f9e9e6e0bb94bac99aeea24814fc
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\57\5782f9e9e6e0bb94bac99aeea24814fc
+      projectPath: Library\metadata\57\5782f9e9e6e0bb94bac99aeea24814fc
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\57\5782f9e9e6e0bb94bac99aeea24814fc.info
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\57\5782f9e9e6e0bb94bac99aeea24814fc.info
+      projectPath: Library\metadata\57\5782f9e9e6e0bb94bac99aeea24814fc.info
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\59\598f7cc167e65424284e573aff0f1294
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\59\598f7cc167e65424284e573aff0f1294
+      projectPath: Library\metadata\59\598f7cc167e65424284e573aff0f1294
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\59\598f7cc167e65424284e573aff0f1294.info
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\59\598f7cc167e65424284e573aff0f1294.info
+      projectPath: Library\metadata\59\598f7cc167e65424284e573aff0f1294.info
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\5f\5f32cd94baa94578a686d4b9d6b660f7
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\5f\5f32cd94baa94578a686d4b9d6b660f7
+      projectPath: Library\metadata\5f\5f32cd94baa94578a686d4b9d6b660f7
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\5f\5f32cd94baa94578a686d4b9d6b660f7.info
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\5f\5f32cd94baa94578a686d4b9d6b660f7.info
+      projectPath: Library\metadata\5f\5f32cd94baa94578a686d4b9d6b660f7.info
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\60\60a1227411104214191240025ecd4996
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\60\60a1227411104214191240025ecd4996
+      projectPath: Library\metadata\60\60a1227411104214191240025ecd4996
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\60\60a1227411104214191240025ecd4996.info
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\60\60a1227411104214191240025ecd4996.info
+      projectPath: Library\metadata\60\60a1227411104214191240025ecd4996.info
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\63\636d33ae594884e7d80b569f429d245d
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\63\636d33ae594884e7d80b569f429d245d
+      projectPath: Library\metadata\63\636d33ae594884e7d80b569f429d245d
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\63\636d33ae594884e7d80b569f429d245d.info
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\63\636d33ae594884e7d80b569f429d245d.info
+      projectPath: Library\metadata\63\636d33ae594884e7d80b569f429d245d.info
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\67\67a48bef50c8f384ab614ca4fd2f1d25
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\67\67a48bef50c8f384ab614ca4fd2f1d25
+      projectPath: Library\metadata\67\67a48bef50c8f384ab614ca4fd2f1d25
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\67\67a48bef50c8f384ab614ca4fd2f1d25.info
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\67\67a48bef50c8f384ab614ca4fd2f1d25.info
+      projectPath: Library\metadata\67\67a48bef50c8f384ab614ca4fd2f1d25.info
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\69\6981461fe431401459211818212a29cf
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\69\6981461fe431401459211818212a29cf
+      projectPath: Library\metadata\69\6981461fe431401459211818212a29cf
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\69\6981461fe431401459211818212a29cf.info
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\69\6981461fe431401459211818212a29cf.info
+      projectPath: Library\metadata\69\6981461fe431401459211818212a29cf.info
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\6a\6a10b2909283487f913b00d94cd3faf5
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\6a\6a10b2909283487f913b00d94cd3faf5
+      projectPath: Library\metadata\6a\6a10b2909283487f913b00d94cd3faf5
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\6a\6a10b2909283487f913b00d94cd3faf5.info
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\6a\6a10b2909283487f913b00d94cd3faf5.info
+      projectPath: Library\metadata\6a\6a10b2909283487f913b00d94cd3faf5.info
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\6d\6daa66f23a1e5324caec116fb03ca529
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\6d\6daa66f23a1e5324caec116fb03ca529
+      projectPath: Library\metadata\6d\6daa66f23a1e5324caec116fb03ca529
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\6d\6daa66f23a1e5324caec116fb03ca529.info
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\6d\6daa66f23a1e5324caec116fb03ca529.info
+      projectPath: Library\metadata\6d\6daa66f23a1e5324caec116fb03ca529.info
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\73\739bbd9f364b4268874f9fd86ab3beef
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\73\739bbd9f364b4268874f9fd86ab3beef
+      projectPath: Library\metadata\73\739bbd9f364b4268874f9fd86ab3beef
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\73\739bbd9f364b4268874f9fd86ab3beef.info
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\73\739bbd9f364b4268874f9fd86ab3beef.info
+      projectPath: Library\metadata\73\739bbd9f364b4268874f9fd86ab3beef.info
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\76\7668179ede524d6396c8b7d84461ea29
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\76\7668179ede524d6396c8b7d84461ea29
+      projectPath: Library\metadata\76\7668179ede524d6396c8b7d84461ea29
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\76\7668179ede524d6396c8b7d84461ea29.info
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\76\7668179ede524d6396c8b7d84461ea29.info
+      projectPath: Library\metadata\76\7668179ede524d6396c8b7d84461ea29.info
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\79\790749ba7e4b18141953e39cb13f1b79
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\79\790749ba7e4b18141953e39cb13f1b79
+      projectPath: Library\metadata\79\790749ba7e4b18141953e39cb13f1b79
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\79\790749ba7e4b18141953e39cb13f1b79.info
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\79\790749ba7e4b18141953e39cb13f1b79.info
+      projectPath: Library\metadata\79\790749ba7e4b18141953e39cb13f1b79.info
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\7c\7cc881bea450edc4ca7114e23fad3cee
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\7c\7cc881bea450edc4ca7114e23fad3cee
+      projectPath: Library\metadata\7c\7cc881bea450edc4ca7114e23fad3cee
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\7c\7cc881bea450edc4ca7114e23fad3cee.info
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\7c\7cc881bea450edc4ca7114e23fad3cee.info
+      projectPath: Library\metadata\7c\7cc881bea450edc4ca7114e23fad3cee.info
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\80\80a3616ca19596e4da0f10f14d241e9f
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\80\80a3616ca19596e4da0f10f14d241e9f
+      projectPath: Library\metadata\80\80a3616ca19596e4da0f10f14d241e9f
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\80\80a3616ca19596e4da0f10f14d241e9f.info
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\80\80a3616ca19596e4da0f10f14d241e9f.info
+      projectPath: Library\metadata\80\80a3616ca19596e4da0f10f14d241e9f.info
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\83\8382b2bb260241859771b69b7f377a8d
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\83\8382b2bb260241859771b69b7f377a8d
+      projectPath: Library\metadata\83\8382b2bb260241859771b69b7f377a8d
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\83\8382b2bb260241859771b69b7f377a8d.info
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\83\8382b2bb260241859771b69b7f377a8d.info
+      projectPath: Library\metadata\83\8382b2bb260241859771b69b7f377a8d.info
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\84\844f815391db42d49455cbf1a7bfc434
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\84\844f815391db42d49455cbf1a7bfc434
+      projectPath: Library\metadata\84\844f815391db42d49455cbf1a7bfc434
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\84\844f815391db42d49455cbf1a7bfc434.info
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\84\844f815391db42d49455cbf1a7bfc434.info
+      projectPath: Library\metadata\84\844f815391db42d49455cbf1a7bfc434.info
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\84\84ca94c19f25ae14d83aa41bb3654390
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\84\84ca94c19f25ae14d83aa41bb3654390
+      projectPath: Library\metadata\84\84ca94c19f25ae14d83aa41bb3654390
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\84\84ca94c19f25ae14d83aa41bb3654390.info
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\84\84ca94c19f25ae14d83aa41bb3654390.info
+      projectPath: Library\metadata\84\84ca94c19f25ae14d83aa41bb3654390.info
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\85\852e56802eb941638acbb491814497b0
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\85\852e56802eb941638acbb491814497b0
+      projectPath: Library\metadata\85\852e56802eb941638acbb491814497b0
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\85\852e56802eb941638acbb491814497b0.info
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\85\852e56802eb941638acbb491814497b0.info
+      projectPath: Library\metadata\85\852e56802eb941638acbb491814497b0.info
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\85\853cace4d6a11bc47b18d8c391da84bd
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\85\853cace4d6a11bc47b18d8c391da84bd
+      projectPath: Library\metadata\85\853cace4d6a11bc47b18d8c391da84bd
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\85\853cace4d6a11bc47b18d8c391da84bd.info
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\85\853cace4d6a11bc47b18d8c391da84bd.info
+      projectPath: Library\metadata\85\853cace4d6a11bc47b18d8c391da84bd.info
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\85\85bc8dd3b9ec4ef4688330752ea20b7f
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\85\85bc8dd3b9ec4ef4688330752ea20b7f
+      projectPath: Library\metadata\85\85bc8dd3b9ec4ef4688330752ea20b7f
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\85\85bc8dd3b9ec4ef4688330752ea20b7f.info
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\85\85bc8dd3b9ec4ef4688330752ea20b7f.info
+      projectPath: Library\metadata\85\85bc8dd3b9ec4ef4688330752ea20b7f.info
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\86\868fbb4c41814baebc00f96e24ede2f8
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\86\868fbb4c41814baebc00f96e24ede2f8
+      projectPath: Library\metadata\86\868fbb4c41814baebc00f96e24ede2f8
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\86\868fbb4c41814baebc00f96e24ede2f8.info
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\86\868fbb4c41814baebc00f96e24ede2f8.info
+      projectPath: Library\metadata\86\868fbb4c41814baebc00f96e24ede2f8.info
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\86\86f4de9468454445ac2f39e207fafa3a
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\86\86f4de9468454445ac2f39e207fafa3a
+      projectPath: Library\metadata\86\86f4de9468454445ac2f39e207fafa3a
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\86\86f4de9468454445ac2f39e207fafa3a.info
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\86\86f4de9468454445ac2f39e207fafa3a.info
+      projectPath: Library\metadata\86\86f4de9468454445ac2f39e207fafa3a.info
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\87\870353891bb340e2b2a9c8707e7419ba
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\87\870353891bb340e2b2a9c8707e7419ba
+      projectPath: Library\metadata\87\870353891bb340e2b2a9c8707e7419ba
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\87\870353891bb340e2b2a9c8707e7419ba.info
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\87\870353891bb340e2b2a9c8707e7419ba.info
+      projectPath: Library\metadata\87\870353891bb340e2b2a9c8707e7419ba.info
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\8e\8e0cd8ed44d4412cbe0642067abc9e44
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\8e\8e0cd8ed44d4412cbe0642067abc9e44
+      projectPath: Library\metadata\8e\8e0cd8ed44d4412cbe0642067abc9e44
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\8e\8e0cd8ed44d4412cbe0642067abc9e44.info
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\8e\8e0cd8ed44d4412cbe0642067abc9e44.info
+      projectPath: Library\metadata\8e\8e0cd8ed44d4412cbe0642067abc9e44.info
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\8e\8e7066e382b0fc749b25dbb1a3004dfe
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\8e\8e7066e382b0fc749b25dbb1a3004dfe
+      projectPath: Library\metadata\8e\8e7066e382b0fc749b25dbb1a3004dfe
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\8e\8e7066e382b0fc749b25dbb1a3004dfe.info
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\8e\8e7066e382b0fc749b25dbb1a3004dfe.info
+      projectPath: Library\metadata\8e\8e7066e382b0fc749b25dbb1a3004dfe.info
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\90\9078b7128e594410d9b89e5b24cffd01
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\90\9078b7128e594410d9b89e5b24cffd01
+      projectPath: Library\metadata\90\9078b7128e594410d9b89e5b24cffd01
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\90\9078b7128e594410d9b89e5b24cffd01.info
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\90\9078b7128e594410d9b89e5b24cffd01.info
+      projectPath: Library\metadata\90\9078b7128e594410d9b89e5b24cffd01.info
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\97\97decbdab0634cdd991f8d23ddf0dead
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\97\97decbdab0634cdd991f8d23ddf0dead
+      projectPath: Library\metadata\97\97decbdab0634cdd991f8d23ddf0dead
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\97\97decbdab0634cdd991f8d23ddf0dead.info
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\97\97decbdab0634cdd991f8d23ddf0dead.info
+      projectPath: Library\metadata\97\97decbdab0634cdd991f8d23ddf0dead.info
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\99\99b48d4d4f6a66340ab06bd487d70a45
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\99\99b48d4d4f6a66340ab06bd487d70a45
+      projectPath: Library\metadata\99\99b48d4d4f6a66340ab06bd487d70a45
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\99\99b48d4d4f6a66340ab06bd487d70a45.info
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\99\99b48d4d4f6a66340ab06bd487d70a45.info
+      projectPath: Library\metadata\99\99b48d4d4f6a66340ab06bd487d70a45.info
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\a0\a0ded7adcc817ce489fec07977f16d13
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\a0\a0ded7adcc817ce489fec07977f16d13
+      projectPath: Library\metadata\a0\a0ded7adcc817ce489fec07977f16d13
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\a0\a0ded7adcc817ce489fec07977f16d13.info
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\a0\a0ded7adcc817ce489fec07977f16d13.info
+      projectPath: Library\metadata\a0\a0ded7adcc817ce489fec07977f16d13.info
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\a1\a1ae072c6d0a6fe42881de7c5c8d66eb
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\a1\a1ae072c6d0a6fe42881de7c5c8d66eb
+      projectPath: Library\metadata\a1\a1ae072c6d0a6fe42881de7c5c8d66eb
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\a1\a1ae072c6d0a6fe42881de7c5c8d66eb.info
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\a1\a1ae072c6d0a6fe42881de7c5c8d66eb.info
+      projectPath: Library\metadata\a1\a1ae072c6d0a6fe42881de7c5c8d66eb.info
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\a8\a83159a46d87d2a4f8cec651049b9231
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\a8\a83159a46d87d2a4f8cec651049b9231
+      projectPath: Library\metadata\a8\a83159a46d87d2a4f8cec651049b9231
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\a8\a83159a46d87d2a4f8cec651049b9231.info
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\a8\a83159a46d87d2a4f8cec651049b9231.info
+      projectPath: Library\metadata\a8\a83159a46d87d2a4f8cec651049b9231.info
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\ad\adebbd281f1a4ef3a30be7f21937e02f
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\ad\adebbd281f1a4ef3a30be7f21937e02f
+      projectPath: Library\metadata\ad\adebbd281f1a4ef3a30be7f21937e02f
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\ad\adebbd281f1a4ef3a30be7f21937e02f.info
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\ad\adebbd281f1a4ef3a30be7f21937e02f.info
+      projectPath: Library\metadata\ad\adebbd281f1a4ef3a30be7f21937e02f.info
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\b2\b2b693dffac3a4433b3114fea0b7fd4e
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\b2\b2b693dffac3a4433b3114fea0b7fd4e
+      projectPath: Library\metadata\b2\b2b693dffac3a4433b3114fea0b7fd4e
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\b2\b2b693dffac3a4433b3114fea0b7fd4e.info
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\b2\b2b693dffac3a4433b3114fea0b7fd4e.info
+      projectPath: Library\metadata\b2\b2b693dffac3a4433b3114fea0b7fd4e.info
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\b2\b2bead50dbf86924f8e51f03ddbebf70
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\b2\b2bead50dbf86924f8e51f03ddbebf70
+      projectPath: Library\metadata\b2\b2bead50dbf86924f8e51f03ddbebf70
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\b2\b2bead50dbf86924f8e51f03ddbebf70.info
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\b2\b2bead50dbf86924f8e51f03ddbebf70.info
+      projectPath: Library\metadata\b2\b2bead50dbf86924f8e51f03ddbebf70.info
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\b4\b455a70c012793a4d94fe976e18140af
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\b4\b455a70c012793a4d94fe976e18140af
+      projectPath: Library\metadata\b4\b455a70c012793a4d94fe976e18140af
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\b4\b455a70c012793a4d94fe976e18140af.info
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\b4\b455a70c012793a4d94fe976e18140af.info
+      projectPath: Library\metadata\b4\b455a70c012793a4d94fe976e18140af.info
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\b8\b88cae02c8fab6e47999b50827bb1530
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\b8\b88cae02c8fab6e47999b50827bb1530
+      projectPath: Library\metadata\b8\b88cae02c8fab6e47999b50827bb1530
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\b8\b88cae02c8fab6e47999b50827bb1530.info
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\b8\b88cae02c8fab6e47999b50827bb1530.info
+      projectPath: Library\metadata\b8\b88cae02c8fab6e47999b50827bb1530.info
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\ba\ba8ad3e6c5be01e448c1f3593515049c
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\ba\ba8ad3e6c5be01e448c1f3593515049c
+      projectPath: Library\metadata\ba\ba8ad3e6c5be01e448c1f3593515049c
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\ba\ba8ad3e6c5be01e448c1f3593515049c.info
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\ba\ba8ad3e6c5be01e448c1f3593515049c.info
+      projectPath: Library\metadata\ba\ba8ad3e6c5be01e448c1f3593515049c.info
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\bc\bc9a5f6325c0832408624f471a6c1425
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\bc\bc9a5f6325c0832408624f471a6c1425
+      projectPath: Library\metadata\bc\bc9a5f6325c0832408624f471a6c1425
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\bc\bc9a5f6325c0832408624f471a6c1425.info
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\bc\bc9a5f6325c0832408624f471a6c1425.info
+      projectPath: Library\metadata\bc\bc9a5f6325c0832408624f471a6c1425.info
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\c1\c1eb0d289ecf9f34bbd08287ab6c2d87
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\c1\c1eb0d289ecf9f34bbd08287ab6c2d87
+      projectPath: Library\metadata\c1\c1eb0d289ecf9f34bbd08287ab6c2d87
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\c1\c1eb0d289ecf9f34bbd08287ab6c2d87.info
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\c1\c1eb0d289ecf9f34bbd08287ab6c2d87.info
+      projectPath: Library\metadata\c1\c1eb0d289ecf9f34bbd08287ab6c2d87.info
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\c5\c5c83d14802e712408f23409f3c59e26
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\c5\c5c83d14802e712408f23409f3c59e26
+      projectPath: Library\metadata\c5\c5c83d14802e712408f23409f3c59e26
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\c5\c5c83d14802e712408f23409f3c59e26.info
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\c5\c5c83d14802e712408f23409f3c59e26.info
+      projectPath: Library\metadata\c5\c5c83d14802e712408f23409f3c59e26.info
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\c6\c6d6cc705b2fa53448f26dd682a4a938
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\c6\c6d6cc705b2fa53448f26dd682a4a938
+      projectPath: Library\metadata\c6\c6d6cc705b2fa53448f26dd682a4a938
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\c6\c6d6cc705b2fa53448f26dd682a4a938.info
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\c6\c6d6cc705b2fa53448f26dd682a4a938.info
+      projectPath: Library\metadata\c6\c6d6cc705b2fa53448f26dd682a4a938.info
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\c7\c71a32b55077b0547868a298b68d21df
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\c7\c71a32b55077b0547868a298b68d21df
+      projectPath: Library\metadata\c7\c71a32b55077b0547868a298b68d21df
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\c7\c71a32b55077b0547868a298b68d21df.info
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\c7\c71a32b55077b0547868a298b68d21df.info
+      projectPath: Library\metadata\c7\c71a32b55077b0547868a298b68d21df.info
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\c7\c743ae24ee231884887054d20ccdd0ae
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\c7\c743ae24ee231884887054d20ccdd0ae
+      projectPath: Library\metadata\c7\c743ae24ee231884887054d20ccdd0ae
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\c7\c743ae24ee231884887054d20ccdd0ae.info
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\c7\c743ae24ee231884887054d20ccdd0ae.info
+      projectPath: Library\metadata\c7\c743ae24ee231884887054d20ccdd0ae.info
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\ca\ca9ef9f91d24fab40addaf0deaf60506
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\ca\ca9ef9f91d24fab40addaf0deaf60506
+      projectPath: Library\metadata\ca\ca9ef9f91d24fab40addaf0deaf60506
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\ca\ca9ef9f91d24fab40addaf0deaf60506.info
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\ca\ca9ef9f91d24fab40addaf0deaf60506.info
+      projectPath: Library\metadata\ca\ca9ef9f91d24fab40addaf0deaf60506.info
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\ca\cad92998c5182496e8b989b406d9f156
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\ca\cad92998c5182496e8b989b406d9f156
+      projectPath: Library\metadata\ca\cad92998c5182496e8b989b406d9f156
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\ca\cad92998c5182496e8b989b406d9f156.info
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\ca\cad92998c5182496e8b989b406d9f156.info
+      projectPath: Library\metadata\ca\cad92998c5182496e8b989b406d9f156.info
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\d0\d05b96cee66e14240838de167097537a
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\d0\d05b96cee66e14240838de167097537a
+      projectPath: Library\metadata\d0\d05b96cee66e14240838de167097537a
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\d0\d05b96cee66e14240838de167097537a.info
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\d0\d05b96cee66e14240838de167097537a.info
+      projectPath: Library\metadata\d0\d05b96cee66e14240838de167097537a.info
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\d3\d301b02d403f0b14da47c02442ad3731
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\d3\d301b02d403f0b14da47c02442ad3731
+      projectPath: Library\metadata\d3\d301b02d403f0b14da47c02442ad3731
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\d3\d301b02d403f0b14da47c02442ad3731.info
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\d3\d301b02d403f0b14da47c02442ad3731.info
+      projectPath: Library\metadata\d3\d301b02d403f0b14da47c02442ad3731.info
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\d5\d516f2a1bec6a9645a084ef8c9237132
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\d5\d516f2a1bec6a9645a084ef8c9237132
+      projectPath: Library\metadata\d5\d516f2a1bec6a9645a084ef8c9237132
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\d5\d516f2a1bec6a9645a084ef8c9237132.info
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\d5\d516f2a1bec6a9645a084ef8c9237132.info
+      projectPath: Library\metadata\d5\d516f2a1bec6a9645a084ef8c9237132.info
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\d9\d91035c548f23744c9bfb107348ed1c0
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\d9\d91035c548f23744c9bfb107348ed1c0
+      projectPath: Library\metadata\d9\d91035c548f23744c9bfb107348ed1c0
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\d9\d91035c548f23744c9bfb107348ed1c0.info
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\d9\d91035c548f23744c9bfb107348ed1c0.info
+      projectPath: Library\metadata\d9\d91035c548f23744c9bfb107348ed1c0.info
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\dc\dc443db3e92b4983b9738c1131f555cb
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\dc\dc443db3e92b4983b9738c1131f555cb
+      projectPath: Library\metadata\dc\dc443db3e92b4983b9738c1131f555cb
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\dc\dc443db3e92b4983b9738c1131f555cb.info
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\dc\dc443db3e92b4983b9738c1131f555cb.info
+      projectPath: Library\metadata\dc\dc443db3e92b4983b9738c1131f555cb.info
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\dd\ddb8611e748af425a82a497ac5a98c0c
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\dd\ddb8611e748af425a82a497ac5a98c0c
+      projectPath: Library\metadata\dd\ddb8611e748af425a82a497ac5a98c0c
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\dd\ddb8611e748af425a82a497ac5a98c0c.info
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\dd\ddb8611e748af425a82a497ac5a98c0c.info
+      projectPath: Library\metadata\dd\ddb8611e748af425a82a497ac5a98c0c.info
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\e1\e1007cd261c84053beb0c3537782908d
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\e1\e1007cd261c84053beb0c3537782908d
+      projectPath: Library\metadata\e1\e1007cd261c84053beb0c3537782908d
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\e1\e1007cd261c84053beb0c3537782908d.info
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\e1\e1007cd261c84053beb0c3537782908d.info
+      projectPath: Library\metadata\e1\e1007cd261c84053beb0c3537782908d.info
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\ec\ecfb28d906a32914d956497c8d3b3395
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\ec\ecfb28d906a32914d956497c8d3b3395
+      projectPath: Library\metadata\ec\ecfb28d906a32914d956497c8d3b3395
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\ec\ecfb28d906a32914d956497c8d3b3395.info
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\ec\ecfb28d906a32914d956497c8d3b3395.info
+      projectPath: Library\metadata\ec\ecfb28d906a32914d956497c8d3b3395.info
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\f5\f5f67c52d1564df4a8936ccd202a3bd8
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\f5\f5f67c52d1564df4a8936ccd202a3bd8
+      projectPath: Library\metadata\f5\f5f67c52d1564df4a8936ccd202a3bd8
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\f5\f5f67c52d1564df4a8936ccd202a3bd8.info
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\f5\f5f67c52d1564df4a8936ccd202a3bd8.info
+      projectPath: Library\metadata\f5\f5f67c52d1564df4a8936ccd202a3bd8.info
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\f7\f70555f144d8491a825f0804e09c671c
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\f7\f70555f144d8491a825f0804e09c671c
+      projectPath: Library\metadata\f7\f70555f144d8491a825f0804e09c671c
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\f7\f70555f144d8491a825f0804e09c671c.info
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\f7\f70555f144d8491a825f0804e09c671c.info
+      projectPath: Library\metadata\f7\f70555f144d8491a825f0804e09c671c.info
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\f7\f7b54ff4a43d4fcf81b4538b678e0bcc
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\f7\f7b54ff4a43d4fcf81b4538b678e0bcc
+      projectPath: Library\metadata\f7\f7b54ff4a43d4fcf81b4538b678e0bcc
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\f7\f7b54ff4a43d4fcf81b4538b678e0bcc.info
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\f7\f7b54ff4a43d4fcf81b4538b678e0bcc.info
+      projectPath: Library\metadata\f7\f7b54ff4a43d4fcf81b4538b678e0bcc.info
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\f9\f9fc9b08ecd899944adf9860b4abd6b6
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\f9\f9fc9b08ecd899944adf9860b4abd6b6
+      projectPath: Library\metadata\f9\f9fc9b08ecd899944adf9860b4abd6b6
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\f9\f9fc9b08ecd899944adf9860b4abd6b6.info
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\f9\f9fc9b08ecd899944adf9860b4abd6b6.info
+      projectPath: Library\metadata\f9\f9fc9b08ecd899944adf9860b4abd6b6.info
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\fe\fe5abeadcbe591e4fa9107fbc02f3998
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\fe\fe5abeadcbe591e4fa9107fbc02f3998
+      projectPath: Library\metadata\fe\fe5abeadcbe591e4fa9107fbc02f3998
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\metadata\fe\fe5abeadcbe591e4fa9107fbc02f3998.info
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\metadata\fe\fe5abeadcbe591e4fa9107fbc02f3998.info
+      projectPath: Library\metadata\fe\fe5abeadcbe591e4fa9107fbc02f3998.info
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Library\shadercompiler-UnityShaderCompiler.exe0.log
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Library\shadercompiler-UnityShaderCompiler.exe0.log
+      projectPath: Library\shadercompiler-UnityShaderCompiler.exe0.log
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\New Unity Project.sln
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\New
+        Unity Project.sln
+      projectPath: New Unity Project.sln
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\ProjectSettings\AudioManager.asset
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\ProjectSettings\AudioManager.asset
+      projectPath: ProjectSettings\AudioManager.asset
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\ProjectSettings\ClusterInputManager.asset
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\ProjectSettings\ClusterInputManager.asset
+      projectPath: ProjectSettings\ClusterInputManager.asset
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\ProjectSettings\DynamicsManager.asset
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\ProjectSettings\DynamicsManager.asset
+      projectPath: ProjectSettings\DynamicsManager.asset
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\ProjectSettings\EditorBuildSettings.asset
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\ProjectSettings\EditorBuildSettings.asset
+      projectPath: ProjectSettings\EditorBuildSettings.asset
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\ProjectSettings\EditorSettings.asset
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\ProjectSettings\EditorSettings.asset
+      projectPath: ProjectSettings\EditorSettings.asset
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\ProjectSettings\GraphicsSettings.asset
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\ProjectSettings\GraphicsSettings.asset
+      projectPath: ProjectSettings\GraphicsSettings.asset
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\ProjectSettings\InputManager.asset
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\ProjectSettings\InputManager.asset
+      projectPath: ProjectSettings\InputManager.asset
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\ProjectSettings\NavMeshAreas.asset
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\ProjectSettings\NavMeshAreas.asset
+      projectPath: ProjectSettings\NavMeshAreas.asset
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\ProjectSettings\NetworkManager.asset
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\ProjectSettings\NetworkManager.asset
+      projectPath: ProjectSettings\NetworkManager.asset
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\ProjectSettings\Physics2DSettings.asset
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\ProjectSettings\Physics2DSettings.asset
+      projectPath: ProjectSettings\Physics2DSettings.asset
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\ProjectSettings\ProjectSettings.asset
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\ProjectSettings\ProjectSettings.asset
+      projectPath: ProjectSettings\ProjectSettings.asset
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\ProjectSettings\ProjectVersion.txt
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\ProjectSettings\ProjectVersion.txt
+      projectPath: ProjectSettings\ProjectVersion.txt
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\ProjectSettings\QualitySettings.asset
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\ProjectSettings\QualitySettings.asset
+      projectPath: ProjectSettings\QualitySettings.asset
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\ProjectSettings\TagManager.asset
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\ProjectSettings\TagManager.asset
+      projectPath: ProjectSettings\TagManager.asset
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\ProjectSettings\TimeManager.asset
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\ProjectSettings\TimeManager.asset
+      projectPath: ProjectSettings\TimeManager.asset
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\ProjectSettings\UnityConnectSettings.asset
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\ProjectSettings\UnityConnectSettings.asset
+      projectPath: ProjectSettings\UnityConnectSettings.asset
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Temp\ProcessJobs\e9a6970f79cd12d8b075e7d72f1b07cb.bakert
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Temp\ProcessJobs\e9a6970f79cd12d8b075e7d72f1b07cb.bakert
+      projectPath: Temp\ProcessJobs\e9a6970f79cd12d8b075e7d72f1b07cb.bakert
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Unity\New Unity Project\Temp\TarGZ\archtemp.tar
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\Unity\New Unity Project\Temp\TarGZ\archtemp.tar
+      projectPath: Temp\TarGZ\archtemp.tar
+      originalPath: 
+      status: 4
+      staged: 0
+  - commitID: 997874ddc1b0165afb96efff9fc8c99fb810570f
+    mergeA: 
+    mergeB: 
+    authorName: Tommy MyeongJae Chu
+    authorEmail: tmj.chu@berkeley.edu
+    commitEmail: noreply@github.com
+    commitName: GitHub
+    summary: Initial commit
+    description: Initial commit
+    timeString: 2018-04-14T21:16:22.0000000-07:00
+    commitTimeString: 2018-04-14T21:16:22.0000000-07:00
+    changes:
+    - path: LICENSE
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\LICENSE
+      projectPath: ..\..\LICENSE
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: README.md
+      fullPath: C:\Users\vrab\Documents\GitHub\WorldGen\README.md
+      projectPath: ..\..\README.md
+      originalPath: 
+      status: 4
+      staged: 0
