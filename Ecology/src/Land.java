@@ -1,6 +1,3 @@
-import java.util.List;
-import java.util.ArrayList;
-
 public class Land {
 	private Coordinate loc;
 	private boolean plant = false;
@@ -28,6 +25,11 @@ public class Land {
 
     public void removePlant() {
 	    plant = false;
+    }
+
+    public void addPlant() {
+	    plant = true;
+
     }
 
     public boolean hasRabbit() {

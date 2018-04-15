@@ -15,7 +15,7 @@ public class World {
 
 		}
 
-		me = new Player(new Coordinate(0,0), 100.0);
+		me = new Player(new Coordinate(0,0), 100, this);
 		
 	}
 

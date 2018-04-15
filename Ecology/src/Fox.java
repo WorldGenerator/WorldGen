@@ -46,7 +46,8 @@ public class Fox {
                 }
             }
         }
-        return new Coordinate(x, y);
+        location = new Coordinate(x, y);
+        return location;
     }
 
     public Coordinate getLocation() {
