@@ -8,7 +8,6 @@ public class Land {
 
 	public Land(int x, int y) {
 		Coordinate loc  = new Coordinate(x,y);
-		ArrayList container = new ArrayList();
 		rabbits = new ArrayList<Rabbit>();
 		foxy = new ArrayList<Fox>();
 	}
