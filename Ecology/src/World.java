@@ -1,8 +1,9 @@
 import java.util.Random;
 import java.util.ArrayList;
-
+import java.awt.Color;
 
 public class World {
+
 	private Land[][] theWorld = null;
 	private int plants;
 	private int fox;
@@ -36,21 +37,21 @@ public class World {
     }
 
     public Land getLocation(Coordinate coor) {
-    	return theWorld[coor.getxCord()][coor.getyCord()];
+        return theWorld[coor.getxCord()][coor.getyCord()];
     }
 
     public Land getLocation(int x, int y) {
-    	return theWorld[x][y];
+        return theWorld[x][y];
     }
 
     //random Rabbit movements
     public void moveRabbit() {
-	    for (Rabbit r : rabbitList) {
-	        Coordinate newLocation = r.move();
-	        Land newLand = theWorld[newLocation.getxCord()][newLocation.getyCord()];
-	        if (newLand.isEmpty()) {
-	            Land oldLand = getLocation(r.getLocation());
-	            oldLand.removeRabbit();
+        for (Rabbit r : rabbitList) {
+            Coordinate newLocation = r.move();
+            Land newLand = theWorld[newLocation.getxCord()][newLocation.getyCord()];
+            if (newLand.isEmpty()) {
+                Land oldLand = getLocation(r.getLocation());
+                oldLand.removeRabbit();
                 newLand.addRabbit(r);
                 r.updateLocation(newLocation);
             }
@@ -73,92 +74,91 @@ public class World {
 
     //random Plant growth
     public void growPlant() {
-	    for (Plant p : plantList) {
-	        Coordinate newLocation = p.grow();
-	        Land newLand = getLocation(newLocation);
-	        if (newLand.isEmpty()) {
-	            addPlant(newLocation);
+        for (Plant p : plantList) {
+            Coordinate newLocation = p.grow();
+            Land newLand = getLocation(newLocation);
+            if (newLand.isEmpty()) {
+                addPlant(newLocation);
             }
         }
     }
 
     //Set up
     private boolean addRabbit() {
-    	int place = RANDOM.nextInt(2500);
-    	int x = (int)place/50;
-    	int y = place%50;
-    	Land l = getLocation(x, y);
-    	if (!l.hasRabbit()) {
-    		l.insert(new Rabbit(new Coordinate(x,y)));
+        int place = RANDOM.nextInt(2500);
+        int x = (int)place/50;
+        int y = place%50;
+        Land l = getLocation(x, y);
+        if (!l.hasRabbit()) {
+            l.insert(new Rabbit(new Coordinate(x,y)));
 
-    		this.rabbit += 1;
-    		return true;
-    	}
-    	return false;
+            this.rabbit += 1;
+            return true;
+        }
+        return false;
     }
-    
+
     //Set up
     private boolean addFox() {
-    	int place = RANDOM.nextInt(2500);
-    	int x = (int)place/50;
-    	int y = place%50;
-    	Land l = getLocation(x, y);
-    	if (!l.hasFox()) {
-    		l.insert(new Fox(new Coordinate(x,y)));
-    		this.fox += 1;
-    		return true;
-    	}
-    	return false;
+        int place = RANDOM.nextInt(2500);
+        int x = (int)place/50;
+        int y = place%50;
+        Land l = getLocation(x, y);
+        if (!l.hasFox()) {
+            l.insert(new Fox(new Coordinate(x,y)));
+            this.fox += 1;
+            return true;
+        }
+        return false;
     }
-    
+
     //Set up
     private boolean addPlant() {
-    	int place = RANDOM.nextInt(2500);
-       	int x = (int)place/50;
-    	int y = place%50;
-    	Land l = getLocation(x, y);
-    	if (!l.hasPlant()) {
-    		l.insert(new Plant(new Coordinate(x,y)));
-    		plants += 1;
-    		return true;
-    	}
-    	return false;
+        int place = RANDOM.nextInt(2500);
+        int x = (int)place/50;
+        int y = place%50;
+        Land l = getLocation(x, y);
+        if (!l.hasPlant()) {
+            l.insert(new Plant(new Coordinate(x,y)));
+            plants += 1;
+            return true;
+        }
+        return false;
     }
 
 /////////////////////////////////////////////////////////////////////
 ////         Called by Player									/////
 /////////////////////////////////////////////////////////////////////
     public void addPlant(Coordinate c) {
-    	Land l = getLocation(c);
-    	if (!l.hasPlant()) {
-    		l.insert(new Plant(c));
-    		plants += 1;
-    	}
+        Land l = getLocation(c);
+        if (!l.hasPlant()) {
+            l.insert(new Plant(c));
+            plants += 1;
+        }
     }
 
     public void removePlant(Coordinate c) {
-		getLocation(c).removePlant();
-		plants -= 1;
+        getLocation(c).removePlant();
+        plants -= 1;
 
     }
 
     public void removeRabbit(Coordinate c) {
-    	getLocation(c).removeRabbit();
-    	rabbit -= 1;
+        getLocation(c).removeRabbit();
+        rabbit -= 1;
     }
 
     public void removeFox(Coordinate c) {
-    	getLocation(c).removeFox();
-    	fox -= 1;
+        getLocation(c).removeFox();
+        fox -= 1;
     }
-
-
-
 
 /////////////////////////////////////////////////////////////////////
 ////         Interactive Occurance								/////
 /////////////////////////////////////////////////////////////////////
-	public static void main(String[] args) {
+    
+    public static void main(String[] args) {
+
 		World game = new World(50, 50);
 		Player myself = game.me;
 		int[] current = new int[3];
@@ -190,31 +190,23 @@ public class World {
 		Stopwatch timer1 = new Stopwatch();
         double sum1 = 60.0;
 
-        while (timer1.elapsedTime() < 10.0) {
-        	System.out.println(timer1.elapsedTime());
+        // while (timer1.elapsedTime() < 10.0) {
+        // 	System.out.println(timer1.elapsedTime());
+        // }
+
+        int size  = 50;
+        StdDraw.setCanvasSize(size * 16, size * 16);
+        StdDraw.setXscale(0, size);
+        StdDraw.setYscale(0, size);
+        StdDraw.clear(new Color(0, 0, 0));
+        StdDraw.enableDoubleBuffering();
+
+        for (int x = 0; size > x; x += 1){
+            for (int y = 0; size> y; y += 1){
+                StdDraw.picture(x + .5, y + .5, "Image/grass.png");
+            }
         }
-
-		int size  = 50;
-		StdDrawPlus.setScale(0, 25);
-		for (int x = 0; size > x; x += 1){
-			for (int y = 0; size> y; y += 1){
-		        if ((x + y) % 2 == 0){
-		        	StdDrawPlus.setPenColor(StdDrawPlus.DARK_GRAY);
-		        }
-                else {
-                	StdDrawPlus.setPenColor(StdDrawPlus.LIGHT_GRAY);
-                }
-            	StdDrawPlus.filledSquare(x + .5, y + .5, .5);
-          	}
-		}
-
-	}
+        StdDraw.picture(0, 0, "Image/astro pose walk 1.png");
+        StdDraw.show();
+    }
 }
-
-
-
-
-
-
-
-

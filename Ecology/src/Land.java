@@ -1,59 +1,59 @@
 public class Land {
-	private Coordinate loc;
-	private Plant plant = null;
-	private Rabbit rabbits = null;
-	private Fox foxy = null;
+    private Coordinate loc;
+    private Plant plant = null;
+    private Rabbit rabbits = null;
+    private Fox foxy = null;
 
-	public Land(int x, int y) {
-		Coordinate loc  = new Coordinate(x,y);
-	}
+    public Land(int x, int y) {
+        Coordinate loc  = new Coordinate(x,y);
+    }
 
-	public void insert(Rabbit target) {
-		if (!hasRabbit()){
-			rabbits = target;
-		} 
-	}
+    public void insert(Rabbit target) {
+        if (!hasRabbit()){
+            rabbits = target;
+        }
+    }
     public void addRabbit(Rabbit r) {
-	    rabbits = r;
+        rabbits = r;
     }
     public boolean hasRabbit() {
-	    return rabbits != null;
+        return rabbits != null;
     }
     public void removeRabbit() {
-	    rabbits = null;
+        rabbits = null;
     }
 
 
-	public void insert(Fox target) {
-		if (!hasFox()) {
-			foxy = target;
-		} 
-	}
+    public void insert(Fox target) {
+        if (!hasFox()) {
+            foxy = target;
+        }
+    }
     public void addFox(Fox f) {
-	    foxy = f;
+        foxy = f;
     }
     public boolean hasFox() {
-	    return foxy != null;
+        return foxy != null;
     }
     public void removeFox() {
-	    foxy = null;
+        foxy = null;
     }
 
 
-	public void insert(Plant target) {
-		if (!hasPlant()) {
-			plant = target;
-		}
-	}
-	public boolean hasPlant() {
-	    return plant != null;
+    public void insert(Plant target) {
+        if (!hasPlant()) {
+            plant = target;
+        }
+    }
+    public boolean hasPlant() {
+        return plant != null;
     }
     public void removePlant() {
-	    plant = null;
+        plant = null;
     }
 
 
     public boolean isEmpty() {
-	    return !(hasFox() || hasPlant() || hasRabbit());
+        return !(hasFox() || hasPlant() || hasRabbit());
     }
 }
