@@ -14,15 +14,24 @@ public class World {
 			i += 1;
 
 		}
+
 		me = new Player(new Coordinate(0,0), 100.0);
+		
 	}
 
     public Land[][] getWorld() {
         return theWorld;
     }
 
+    public Land getLocation(Coordinate coor) {
+    	return theWorld[coor.getxCord()][coor.getyCord()];
+    }
+
+    public void addRabbit(Rabbit r) {
+    	
+    }
+
 	public static void main(String[] args) {
 		World n = new World(50, 50);
-
 	}
 }

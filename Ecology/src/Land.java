@@ -5,8 +5,8 @@ public class Land {
 	private Coordinate loc;
 	private boolean plant = false;
 	private boolean me = false;
-	private List<Rabbit> rabbits;
-	private List<Fox> foxy;
+	private Rabbit rabbits = null;
+	private Fox foxy = null;
 
 	public Land(int x, int y) {
 		Coordinate loc  = new Coordinate(x,y);
@@ -15,10 +15,10 @@ public class Land {
 	}
 
 	public void insert(Object target) {
-		if (target instanceof Rabbit) {
-			rabbits.add((Rabbit) target);
-		} else if (target instanceof Fox) {
-			foxy.add((Fox) target);
+		if ((target instanceof Rabbit) && !hasRabbit()){
+			rabbits = target;
+		} else if ((target instanceof Rabbit) && !hasFox()) {
+			foxy = target;
 		} else {
 			System.out.println("Should not be added");
 		}
@@ -33,18 +33,18 @@ public class Land {
     }
 
     public boolean hasRabbit() {
-	    return rabbits.size() > 0;
+	    return rabbits != null;
     }
 
     public void removeRabbit() {
-	    rabbits.remove(0);
+	    rabbits = null;
     }
 
     public boolean hasFox() {
-	    return foxy.size() > 0;
+	    return foxy != null;
     }
 
     public void removeFox() {
-	    foxy.remove(0);
+	    foxy = null;
     }
 }
