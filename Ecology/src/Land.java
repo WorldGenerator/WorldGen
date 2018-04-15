@@ -14,9 +14,9 @@ public class Land {
 
 	public void insert(Object target) {
 		if ((target instanceof Rabbit) && !hasRabbit()){
-			rabbits = target;
+			rabbits = (Rabbit)target;
 		} else if ((target instanceof Rabbit) && !hasFox()) {
-			foxy = target;
+			foxy = (Fox)target;
 		} else {
 			System.out.println("Should not be added");
 		}
