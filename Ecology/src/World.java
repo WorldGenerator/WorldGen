@@ -4,4 +4,8 @@ public class World {
 	private int fox;
 	private int rabbit;
 
+	public Land[][] getWorld() {
+	    return theWorld;
+    }
+
 }
