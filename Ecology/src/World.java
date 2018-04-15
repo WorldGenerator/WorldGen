@@ -3,10 +3,10 @@ public class World {
 	private int plants;
 	private int fox;
 	private int rabbit;
+	private Player me;
 
 	public World(int x, int y) {
 		theWorld = new Land[x][y];
-
 		int i = 0;
 		int size = x*y;
 		while (i < size) {
@@ -14,9 +14,11 @@ public class World {
 			i += 1;
 
 		}
+		me = new Player(new Coordinate(0,0), 100.0);
 	}
 
 	public static void main(String[] args) {
 		World n = new World(50, 50);
+
 	}
 }
