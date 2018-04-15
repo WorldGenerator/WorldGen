@@ -39,7 +39,7 @@ public class World {
     	return theWorld[x][y];
     }
 
-    public void addRabbit(Rabbit r) {
+    private void addRabbit(Rabbit r) {
     	int place = RANDOM.nextInt(2500);
     	Land l = getLocation((int)place/50, place%50);
     	if (!l.hasRabbit()) {
@@ -49,7 +49,7 @@ public class World {
     	
     }
     
-    public void addFox(Fox r) {
+    private void addFox(Fox r) {
     	int place = RANDOM.nextInt(2500);
     	Land l = getLocation((int)place/50, place%50);
     	if (!l.hasFox()) {
@@ -58,13 +58,23 @@ public class World {
     	}
     }
     
-    public void addPlant(Plant r) {
+    private void addPlant(Plant r) {
     	int place = RANDOM.nextInt(2500);
     	Land l = getLocation((int)place/50, place%50);
     	if (!l.hasPlant()) {
     		l.insert(r);
     		plants += 1;
     	}
+    }
+
+    public void removePlant(Coordinate c) {
+
+    }
+    public void removeRabbit(Coordinate c) {
+
+    }
+    public void removeFox(Coordinate c) {
+    	
     }
 
 	public static void main(String[] args) {
