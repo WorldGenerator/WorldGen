@@ -1,6 +1,6 @@
 import java.util.Random;
 import java.util.ArrayList;
-
+import java.awt.Color;
 
 public class World {
     private Land[][] theWorld = null;
@@ -152,10 +152,7 @@ public class World {
         fox -= 1;
     }
 
-
-
-
-    /////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////
 ////         Interactive Occurance								/////
 /////////////////////////////////////////////////////////////////////
     public static void main(String[] args) {
@@ -183,18 +180,18 @@ public class World {
         }
 
         int size  = 50;
-        StdDrawPlus.setScale(0, 25);
+        StdDraw.setCanvasSize(size * 16, size * 16);
+        StdDraw.setXscale(0, size);
+        StdDraw.setYscale(0, size);
+        StdDraw.clear(new Color(0, 0, 0));
+        StdDraw.enableDoubleBuffering();
+
         for (int x = 0; size > x; x += 1){
             for (int y = 0; size> y; y += 1){
-                if ((x + y) % 2 == 0){
-                    StdDrawPlus.setPenColor(StdDrawPlus.DARK_GRAY);
-                }
-                else {
-                    StdDrawPlus.setPenColor(StdDrawPlus.LIGHT_GRAY);
-                }
-                StdDrawPlus.filledSquare(x + .5, y + .5, .5);
+                StdDraw.picture(x + .5, y + .5, "Image/grass.png");
             }
         }
-
+        StdDraw.picture(0, 0, "Image/astro pose walk 1.png");
+        StdDraw.show();
     }
 }
