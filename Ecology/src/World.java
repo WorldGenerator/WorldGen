@@ -23,12 +23,7 @@ public class World {
 			theWorld[(int)i/y][i%y] = new Land((int)i/y, i%y);
 			i += 1;
 		}
-
-<<<<<<< HEAD
-		me = new Player(new Coordinate(0,0), 100, this);
-=======
 		this.me = new Player(new Coordinate(0,0), 100.0);
->>>>>>> 91a94f844c94b3038a67b88dd99d3c40e9a40986
 		
 	}
 

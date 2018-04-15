@@ -8,7 +8,6 @@ public class Player {
         this.location = location;
         health = healthStart;
         this.w = w;
-        Land currLand = w.getWorld()[location.getxCord()][location.getyCord()];
     }
 
     public int getHealth() {
@@ -17,25 +16,26 @@ public class Player {
 
     public void huntRabbit() {
         if (currLand.hasRabbit()) {
-            currLand.removeRabbit();
+            w.removeRabbit(location);
         }
+
     }
 
     public void huntFox() {
         if (currLand.hasFox()) {
-            currLand.removeFox();
+            w.removeFox(location);
         }
     }
 
     public void harvest() {
         if (currLand.hasPlant()) {
-            currLand.removePlant();
+            w.removePlant(location);
         }
     }
 
     public void grow() {
         if (!currLand.hasPlant()) {
-            currLand.addPlant();
+            w.addPlant(location);
         }
     }
 
