@@ -4,6 +4,7 @@ import java.util.ArrayList;
 public class Land {
 	private final Coordinate loc;
 	private boolean plant = false;
+	private boolean me = false;
 	private List<Animal> rabbits;
 	private List<Animal> foxy;
 
@@ -14,12 +15,13 @@ public class Land {
 	}
 
 	public void insert(Animal target) {
-		// if (target instanceof Rabbit) {
-		// 	rabbits.add(target);
-		// } else if (target instanceof Fox) {
-		// 	foxy.add(target);
-		// } else {
-		// 	System.out.println("Should not be added");
-		// }
+		if (target instanceof Rabbit) {
+			rabbits.add(target);
+		} else if (target instanceof Fox) {
+			foxy.add(target);
+		} else {
+			System.out.println("Should not be added");
+		}
 	}
+
 }
