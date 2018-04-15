@@ -20,7 +20,7 @@ public class Rabbit implements Animal {
     public void eat() {
         //if same tile as a rabbit, probability of eating rabbit
         //if successful, hungry remains false
-        Land area = w.getWorld()[x][y];
+        Land area = w.getWorld().getLocation(location);
         if (area.hasPlant()) {
             area.removePlant();
             hunger = 10;

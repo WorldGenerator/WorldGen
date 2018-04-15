@@ -18,7 +18,7 @@ public class Fox implements Animal {
     public void eat() {
         //if same tile as a rabbit, probability of eating rabbit
         //if successful, hungry remains false
-        Land area = w.getWorld()[x][y];
+        Land area = w.getLocation(location);
         if (area.hasRabbit()) {
             if (RANDOM.nextInt(100) > 40) {
                 area.removeRabbit();
