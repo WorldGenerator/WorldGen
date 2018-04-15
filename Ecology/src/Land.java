@@ -1,7 +1,6 @@
 public class Land {
 	private Coordinate loc;
-	private boolean plant = false;
-	private boolean me = false;
+	private Plant plant = null;
 	private Rabbit rabbits = null;
 	private Fox foxy = null;
 
@@ -9,51 +8,47 @@ public class Land {
 		Coordinate loc  = new Coordinate(x,y);
 	}
 
-	public void insert(Object target) {
-		if ((target instanceof Rabbit) && !hasRabbit()){
-			rabbits = (Rabbit)target;
-		} else if ((target instanceof Rabbit) && !hasFox()) {
-			foxy = (Fox)target;
-		} else {
-			System.out.println("Should not be added");
-		}
+	public void insert(Rabbit target) {
+		if (!hasRabbit()){
+			rabbits = target;
+		} 
 	}
-
-	public boolean hasPlant() {
-	    return plant;
-    }
-
-    public void removePlant() {
-	    plant = false;
-    }
-
-    public void addPlant() {
-	    plant = true;
-    }
-
     public boolean hasRabbit() {
 	    return rabbits != null;
     }
-
-    public void addRabbit(Rabbit r) {
-	    rabbits = r;
-    }
-
     public void removeRabbit() {
 	    rabbits = null;
     }
 
-    public boolean hasFox() {
-	    return foxy != null;
-    }
 
+	public void insert(Fox target) {
+		if (!hasFox()) {
+			foxy = target;
+		} 
+	}
     public void addFox(Fox f) {
 	    foxy = f;
     }
-
+    public boolean hasFox() {
+	    return foxy != null;
+    }
     public void removeFox() {
 	    foxy = null;
     }
+
+
+	public void insert(Plant target) {
+		if (!hasPlant()) {
+			plant = target;
+		}
+	}
+	public boolean hasPlant() {
+	    return plant != null;
+    }
+    public void removePlant() {
+	    plant = null;
+    }
+
 
     public boolean isEmpty() {
 	    return !(hasFox() || hasPlant() || hasRabbit());

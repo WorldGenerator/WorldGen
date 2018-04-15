@@ -1,6 +1,7 @@
 import java.util.Random;
 import java.util.ArrayList;
 
+
 public class World {
 	private Land[][] theWorld = null;
 	private int plants;
@@ -18,9 +19,9 @@ public class World {
 		int i = 0;
 		int size = x*y;
 		theWorld = new Land[x][y];
-		plants = 0;
-		fox = 0;
-		rabbit = 0;
+		this.plants = 0;
+		this.fox = 0;
+		this.rabbit = 0;
 
 		while (i < size) {
 			theWorld[i/y][i%y] = new Land(i/y, i%y);
@@ -82,24 +83,33 @@ public class World {
     }
 
     //Set up
-    private void addRabbit(Rabbit r) {
+    private boolean addRabbit() {
     	int place = RANDOM.nextInt(2500);
-    	Land l = getLocation((int)place/50, place%50);
+    	int x = (int)place/50;
+    	int y = place%50;
+    	Land l = getLocation(x, y);
     	if (!l.hasRabbit()) {
-    		l.insert(r);
-    		rabbit += 1;
+    		l.insert(new Rabbit(new Coordinate(x,y)));
+
+    		this.rabbit += 1;
+    		System.out.println(this.rabbit);
+    		return true;
     	}
-    	
+    	return false;
     }
     
     //Set up
-    private void addFox(Fox r) {
+    private boolean addFox() {
     	int place = RANDOM.nextInt(2500);
-    	Land l = getLocation((int)place/50, place%50);
+    	int x = (int)place/50;
+    	int y = place%50;
+    	Land l = getLocation(x, y);
     	if (!l.hasFox()) {
-    		l.insert(r);
-    		fox += 1;
+    		l.insert(new Fox(new Coordinate(x,y)));
+    		this.fox += 1;
+    		return true;
     	}
+    	return false;
     }
     
     //Set up
@@ -138,6 +148,46 @@ public class World {
     }
 
 	public static void main(String[] args) {
+
 		World n = new World(50, 50);
+
+		int i = 0;
+		while (i < 50) {
+			if (n.addRabbit()) {
+				i += 1;
+			}
+		}
+		System.out.println(n.rabbit);
+
+		i = 0;
+		while (i < 50) {
+			if (n.addFox()) {
+				i += 1;
+			}
+		}
+		System.out.println(n.fox);
+
+		int size  = 50;
+		StdDrawPlus.setScale(0, 25);
+		for (int x = 0; size > x; x += 1){
+			for (int y = 0; size> y; y += 1){
+		        if ((x + y) % 2 == 0){
+		        	StdDrawPlus.setPenColor(StdDrawPlus.DARK_GRAY);
+		        }
+                else {
+                	StdDrawPlus.setPenColor(StdDrawPlus.LIGHT_GRAY);
+                }
+            	StdDrawPlus.filledSquare(x + .5, y + .5, .5);
+          	}
+		}
+
 	}
 }
+
+
+
+
+
+
+
+
