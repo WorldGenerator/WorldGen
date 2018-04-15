@@ -1,30 +1,14 @@
 import java.util.Random;
 
-public class Rabbit implements Animal {
+public class Rabbit {
     private Coordinate location;
     private int x, y;
-    private boolean hungry;
-    private World w;
-    private int hunger;
     private Random RANDOM = new Random(234);
 
-    public Rabbit(World w, Coordinate location) {
+    public Rabbit(Coordinate location) {
         this.location = location;
         x = location.getxCord();
         y = location.getyCord();
-        hungry = false;
-        this.w = w;
-        hunger = 10;
-    }
-
-    public void eat() {
-        //if same tile as a rabbit, probability of eating rabbit
-        //if successful, hungry remains false
-        Land area = w.getWorld()[x][y];
-        if (area.hasPlant()) {
-            area.removePlant();
-            hunger = 10;
-        }
     }
 
     public Coordinate move() {
@@ -64,15 +48,6 @@ public class Rabbit implements Animal {
             }
         }
         return new Coordinate(x, y);
-    }
-
-    public void starvation() {
-        if (hunger <= 0) {
-            //Replace this instance with land, garbage collect
-            w.getWorld()[x][y].removeFox();
-        } else {
-            hunger -= 1;
-        }
     }
 
     public Coordinate getLocation() {

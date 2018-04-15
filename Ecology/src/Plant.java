@@ -2,22 +2,19 @@ import java.util.Random;
 
 public class Plant {
     private Coordinate location;
-    private World w;
     private int x, y;
     private Random RANDOM = new Random(345);
 
-    public Plant(World w, Coordinate location) {
+    public Plant(Coordinate location) {
         this.location = location;
         x = location.getxCord();
         y = location.getyCord();
-        this.w = w;
     }
 
     public Coordinate grow() {
         //Expand around the world
         boolean[] invalid = new boolean[5];
         boolean valid = false;
-
         while (!valid) {
             int direction = RANDOM.nextInt(4);
             if (!invalid[direction]) {
@@ -48,9 +45,7 @@ public class Plant {
                         break;
                 }
                 if (location.getyCord() != y || location.getxCord() != x) {
-                    if (!w.getWorld()[x][y].hasPlant()) {
-                        valid = true;
-                    }
+                    valid = true;
                 }
             }
         }
