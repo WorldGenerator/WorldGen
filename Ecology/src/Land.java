@@ -1,6 +1,11 @@
+<<<<<<< HEAD
 import java.util.List;
 import java.util.ArrayList;
 
+=======
+import java.util.ArrayList;
+import java.util.List;
+>>>>>>> fc1c57a9789fb2963449822024a9fcc92d11281d
 
 public class Land {
 	private final Coordinate loc;
