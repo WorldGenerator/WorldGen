@@ -9,26 +9,23 @@ public class World {
 	private Random RANDOM = new Random();
 
 	public World(int x, int y) {
-		
-		
 		int i = 0;
 		int size = x*y;
-
-		this.theWorld = new Land[x][y];
-		this.plants = 0;
-		this.fox = 0;
-		this.rabbit = 0;
+		theWorld = new Land[x][y];
+		plants = 0;
+		fox = 0;
+		rabbit = 0;
 
 		while (i < size) {
-			theWorld[(int)i/y][i%y] = new Land((int)i/y, i%y);
+			theWorld[i/y][i%y] = new Land(i/y, i%y);
 			i += 1;
 		}
-		this.me = new Player(new Coordinate(0,0), 100, this);
+		me = new Player(new Coordinate(0,0), 100, this);
 		
 	}
 
     public Land[][] getWorld() {
-        return this.theWorld;
+        return theWorld;
     }
 
     public Land getLocation(Coordinate coor) {
