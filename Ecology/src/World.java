@@ -39,6 +39,7 @@ public class World {
     	return theWorld[x][y];
     }
 
+    //Set up
     private void addRabbit(Rabbit r) {
     	int place = RANDOM.nextInt(2500);
     	Land l = getLocation((int)place/50, place%50);
@@ -49,6 +50,7 @@ public class World {
     	
     }
     
+    //Set up
     private void addFox(Fox r) {
     	int place = RANDOM.nextInt(2500);
     	Land l = getLocation((int)place/50, place%50);
@@ -58,6 +60,7 @@ public class World {
     	}
     }
     
+    //Set up
     private void addPlant(Plant r) {
     	int place = RANDOM.nextInt(2500);
     	Land l = getLocation((int)place/50, place%50);
@@ -67,14 +70,29 @@ public class World {
     	}
     }
 
+    //Called by Player
+    public void addPlant(Coordinate c) {
+    	getLocation(c).addPlant(new Plant(c));
+    	plants += 1;
+    }
+
+    //Called by Player
     public void removePlant(Coordinate c) {
+		getLocation(c).removePlant();
+		plants -= 1;
 
     }
+
+    //Called by Player
     public void removeRabbit(Coordinate c) {
-
+    	getLocation(c).removeRabbit();
+    	rabbit -= 1;
     }
+
+    //Called by Player
     public void removeFox(Coordinate c) {
-    	
+    	getLocation(c).removeFox();
+    	fox -= 1;
     }
 
 	public static void main(String[] args) {
