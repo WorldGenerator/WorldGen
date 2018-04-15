@@ -22,12 +22,12 @@ public class World {
 		this.plants = 0;
 		this.fox = 0;
 		this.rabbit = 0;
+		this.me = new Player(new Coordinate(0,0), 100, this);
 
 		while (i < size) {
 			theWorld[i/y][i%y] = new Land(i/y, i%y);
 			i += 1;
 		}
-		me = new Player(new Coordinate(0,0), 100, this);
 		
 	}
 
@@ -159,28 +159,40 @@ public class World {
 ////         Interactive Occurance								/////
 /////////////////////////////////////////////////////////////////////
 	public static void main(String[] args) {
-
-		World n = new World(50, 50);
+		World game = new World(50, 50);
+		Player myself = game.me;
+		int[] current = new int[3];
+		float[][] ratio = new float[3][3];
 
 		//Setting Plants, Rabbits, Fox in random locations
 		int i = 0;
 		while (i < 50) {
-			if (n.addRabbit()) {
+			if (game.addRabbit()) {
 				i += 1;
 			}
 		}
 		i = 0;
 		while (i < 50) {
-			if (n.addFox()) {
+			if (game.addFox()) {
 				i += 1;
 			}
 		}
 		i = 0;
 		while (i < 50) {
-			if (n.addPlant()) {
+			if (game.addPlant()) {
 				i += 1;
 			}
 		}
+		current[0] = game.plants;
+		current[1] = game.fox;
+		current[2] = game.rabbit;
+		
+		Stopwatch timer1 = new Stopwatch();
+        double sum1 = 60.0;
+
+        while (timer1.elapsedTime() < 10.0) {
+        	System.out.println(timer1.elapsedTime());
+        }
 
 		int size  = 50;
 		StdDrawPlus.setScale(0, 25);
