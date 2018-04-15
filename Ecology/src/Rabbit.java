@@ -41,6 +41,7 @@ public class Rabbit {
                         if (y - 1 >= 0) {
                             y -= 1;
                         }
+                        break;
                     case 4:
                         valid = true;
                         break;

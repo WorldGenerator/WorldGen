@@ -29,14 +29,17 @@ public class Fox {
                         if (x + 1 < 50) {
                             x += 1;
                         }
+                        break;
                     case 2:
                         if (y - 1 >= 0) {
                             y -= 1;
                         }
+                        break;
                     case 3:
                         if (y + 1 < 50) {
                             y += 1;
                         }
+                        break;
                     case 4:
                         valid = true;
                         break;
