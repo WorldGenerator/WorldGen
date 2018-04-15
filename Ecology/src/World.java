@@ -156,7 +156,7 @@ public class World {
 /////////////////////////////////////////////////////////////////////
 ////         Interactive Occurance								/////
 /////////////////////////////////////////////////////////////////////
-    
+
     public static void main(String[] args) {
 
 		World game = new World(50, 50);
@@ -195,18 +195,22 @@ public class World {
         // }
 
         int size  = 50;
-        StdDraw.setCanvasSize(size * 16, size * 16);
-        StdDraw.setXscale(0, size);
-        StdDraw.setYscale(0, size);
-        StdDraw.clear(new Color(0, 0, 0));
-        StdDraw.enableDoubleBuffering();
-
-        for (int x = 0; size > x; x += 1){
-            for (int y = 0; size> y; y += 1){
-                StdDraw.picture(x + .5, y + .5, "Image/grass.png");
-            }
+        StdDrawPlus.setCanvasSize(size * 16, size * 16);
+        StdDrawPlus.setXscale(0, size);
+        StdDrawPlus.setYscale(0, size);
+        StdDrawPlus.clear(new Color(0, 0, 0));
+        // StdDraw.enableDoubleBuffering();
+        i = 0;
+        while (i < 50) {
+	        for (int x = 0; size > x; x += 1){
+	            for (int y = 0; size> y; y += 1){
+	                StdDrawPlus.picture(x + .5, y + .5, "Image/grass.png");
+	            }
+	        }
+	        StdDrawPlus.picture(.5 + i, .5 + i, "Image/astro pose walk 1.png");
+	        StdDrawPlus.show(15);        	
+	        i += 1;
         }
-        StdDraw.picture(0, 0, "Image/astro pose walk 1.png");
-        StdDraw.show();
+
     }
 }
