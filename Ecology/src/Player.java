@@ -13,24 +13,32 @@ public class Player {
         return health;
     }
 
+    public void hunger() {
+        health -= 1;
+    }
+
+    //Z
     public void huntRabbit() {
         if (w.getLocation(location).hasRabbit()) {
             w.removeRabbit(location);
         }
     }
 
+    //X
     public void huntFox() {
         if (w.getLocation(location).hasFox()) {
             w.removeFox(location);
         }
     }
 
+    //C
     public void harvest() {
         if (w.getLocation(location).hasPlant()) {
             w.removePlant(location);
         }
     }
 
+    //v
     public void grow() {
         if (!w.getLocation(location).hasPlant()) {
             w.addPlant(location);

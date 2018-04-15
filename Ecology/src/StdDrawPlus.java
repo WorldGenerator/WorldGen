@@ -74,12 +74,12 @@ public final class StdDrawPlus implements ActionListener, MouseListener, MouseMo
     private static Color penColor;
 
     // default canvas size is DEFAULT_SIZE-by-DEFAULT_SIZE
-    private static final int DEFAULT_SIZE = 1000;
+    private static final int DEFAULT_SIZE = 1024;
     private static int width  = DEFAULT_SIZE;
     private static int height = DEFAULT_SIZE;
 
     // default pen radius
-    private static final double DEFAULT_PEN_RADIUS = 0.002;
+    private static final double DEFAULT_PEN_RADIUS = 0.004;
 
     // current pen radius
     private static double penRadius;
@@ -88,11 +88,11 @@ public final class StdDrawPlus implements ActionListener, MouseListener, MouseMo
     private static boolean defer = false;
 
     // boundary of drawing canvas, 5% border
-    private static final double BORDER = 1.0;
+    private static final double BORDER = 0.001;
     private static final double DEFAULT_XMIN = 0.0;
-    private static final double DEFAULT_XMAX = 1000.0;
+    private static final double DEFAULT_XMAX = 2.0;
     private static final double DEFAULT_YMIN = 0.0;
-    private static final double DEFAULT_YMAX = 1000.0;
+    private static final double DEFAULT_YMAX = 2.0;
     private static double xmin, ymin, xmax, ymax;
 
     // for synchronization
@@ -724,8 +724,29 @@ public final class StdDrawPlus implements ActionListener, MouseListener, MouseMo
         return isKeyPressed(KeyEvent.VK_SPACE);
     }
 
-    public static boolean isNPressed() {
-        return isKeyPressed(KeyEvent.VK_N);
+    public static boolean isZPressed() {
+        return isKeyPressed(KeyEvent.VK_Z);
+    }
+    public static boolean isXPressed() {
+        return isKeyPressed(KeyEvent.VK_X);
+    }
+    public static boolean isCPressed() {
+        return isKeyPressed(KeyEvent.VK_C);
+    }
+    public static boolean isVPressed() {
+        return isKeyPressed(KeyEvent.VK_V);
+    }
+    public static boolean isUPPressed() {
+        return isKeyPressed(KeyEvent.VK_UP);
+    }
+    public static boolean isDOWNPressed() {
+        return isKeyPressed(KeyEvent.VK_DOWN);
+    }
+    public static boolean isLEFTPressed() {
+        return isKeyPressed(KeyEvent.VK_LEFT);
+    }
+    public static boolean isRIGHTPressed() {
+        return isKeyPressed(KeyEvent.VK_RIGHT);
     }
 
     /**
