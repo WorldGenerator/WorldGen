@@ -13,6 +13,9 @@ public class Land {
 			rabbits = target;
 		} 
 	}
+    public void addRabbit(Rabbit r) {
+	    rabbits = r;
+    }
     public boolean hasRabbit() {
 	    return rabbits != null;
     }

@@ -92,7 +92,6 @@ public class World {
     		l.insert(new Rabbit(new Coordinate(x,y)));
 
     		this.rabbit += 1;
-    		System.out.println(this.rabbit);
     		return true;
     	}
     	return false;
@@ -113,59 +112,75 @@ public class World {
     }
     
     //Set up
-    private void addPlant(Plant r) {
+    private boolean addPlant() {
     	int place = RANDOM.nextInt(2500);
-    	Land l = getLocation((int)place/50, place%50);
+       	int x = (int)place/50;
+    	int y = place%50;
+    	Land l = getLocation(x, y);
     	if (!l.hasPlant()) {
-    		l.insert(r);
+    		l.insert(new Plant(new Coordinate(x,y)));
+    		plants += 1;
+    		return true;
+    	}
+    	return false;
+    }
+
+/////////////////////////////////////////////////////////////////////
+////         Called by Player									/////
+/////////////////////////////////////////////////////////////////////
+    public void addPlant(Coordinate c) {
+    	Land l = getLocation(c);
+    	if (!l.hasPlant()) {
+    		l.insert(new Plant(c));
     		plants += 1;
     	}
     }
 
-    //Called by Player
-    public void addPlant(Coordinate c) {
-    	getLocation(c).addPlant();
-    	plants += 1;
-    }
-
-    //Called by Player
     public void removePlant(Coordinate c) {
 		getLocation(c).removePlant();
 		plants -= 1;
 
     }
 
-    //Called by Player
     public void removeRabbit(Coordinate c) {
     	getLocation(c).removeRabbit();
     	rabbit -= 1;
     }
 
-    //Called by Player
     public void removeFox(Coordinate c) {
     	getLocation(c).removeFox();
     	fox -= 1;
     }
 
+
+
+
+/////////////////////////////////////////////////////////////////////
+////         Interactive Occurance								/////
+/////////////////////////////////////////////////////////////////////
 	public static void main(String[] args) {
 
 		World n = new World(50, 50);
 
+		//Setting Plants, Rabbits, Fox in random locations
 		int i = 0;
 		while (i < 50) {
 			if (n.addRabbit()) {
 				i += 1;
 			}
 		}
-		System.out.println(n.rabbit);
-
 		i = 0;
 		while (i < 50) {
 			if (n.addFox()) {
 				i += 1;
 			}
 		}
-		System.out.println(n.fox);
+		i = 0;
+		while (i < 50) {
+			if (n.addPlant()) {
+				i += 1;
+			}
+		}
 
 		int size  = 50;
 		StdDrawPlus.setScale(0, 25);
