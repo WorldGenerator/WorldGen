@@ -1,10 +1,16 @@
 import java.util.Random;
+import java.util.ArrayList;
 
 public class World {
 	private Land[][] theWorld = null;
 	private int plants;
 	private int fox;
 	private int rabbit;
+
+	private ArrayList<Rabbit> rabbitList = new ArrayList<>();
+	private ArrayList<Fox> foxList = new ArrayList<>();
+	private ArrayList<Plant> plantList = new ArrayList<>();
+
 	private Player me;
 	private Random RANDOM = new Random();
 
@@ -34,6 +40,45 @@ public class World {
 
     public Land getLocation(int x, int y) {
     	return theWorld[x][y];
+    }
+
+    //random Rabbit movements
+    public void moveRabbit() {
+	    for (Rabbit r : rabbitList) {
+	        Coordinate newLocation = r.move();
+	        Land newLand = theWorld[newLocation.getxCord()][newLocation.getyCord()];
+	        if (newLand.isEmpty()) {
+	            Land oldLand = getLocation(r.getLocation());
+	            oldLand.removeRabbit();
+                newLand.addRabbit(r);
+                r.updateLocation(newLocation);
+            }
+        }
+    }
+
+    //random Fox movements
+    public void moveFox() {
+        for (Fox f : foxList) {
+            Coordinate newLocation = f.move();
+            Land newLand = getLocation(newLocation);
+            if (newLand.isEmpty()) {
+                Land oldLand = getLocation(f.getLocation());
+                oldLand.removeFox();
+                newLand.addFox(f);
+                f.updateLocation(newLocation);
+            }
+        }
+    }
+
+    //random Plant growth
+    public void growPlant() {
+	    for (Plant p : plantList) {
+	        Coordinate newLocation = p.grow();
+	        Land newLand = getLocation(newLocation);
+	        if (newLand.isEmpty()) {
+	            addPlant(newLocation);
+            }
+        }
     }
 
     //Set up

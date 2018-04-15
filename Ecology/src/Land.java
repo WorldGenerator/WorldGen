@@ -29,11 +29,14 @@ public class Land {
 
     public void addPlant() {
 	    plant = true;
-
     }
 
     public boolean hasRabbit() {
 	    return rabbits != null;
+    }
+
+    public void addRabbit(Rabbit r) {
+	    rabbits = r;
     }
 
     public void removeRabbit() {
@@ -44,7 +47,15 @@ public class Land {
 	    return foxy != null;
     }
 
+    public void addFox(Fox f) {
+	    foxy = f;
+    }
+
     public void removeFox() {
 	    foxy = null;
+    }
+
+    public boolean isEmpty() {
+	    return !(hasFox() || hasPlant() || hasRabbit());
     }
 }

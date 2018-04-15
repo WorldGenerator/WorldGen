@@ -46,8 +46,13 @@ public class Fox {
                 }
             }
         }
-        location = new Coordinate(x, y);
-        return location;
+        return new Coordinate(x, y);
+    }
+
+    public void updateLocation(Coordinate c) {
+        location = c;
+        x = location.getxCord();
+        y = location.getyCord();
     }
 
     public Coordinate getLocation() {
