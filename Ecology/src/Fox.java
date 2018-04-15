@@ -3,12 +3,13 @@ import java.util.Random;
 public class Fox {
     private Coordinate location;
     private int x, y;
-    private final Random RANDOM = new Random(123);
+    private Random RANDOM;
 
     public Fox(Coordinate location) {
         x = location.getxCord();
         y = location.getyCord();
         this.location = location;
+        RANDOM = new Random(x * y);
     }
 
     public Coordinate move() {
