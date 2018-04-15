@@ -63,4 +63,8 @@ public class Rabbit {
     public Coordinate getLocation() {
         return location;
     }
+
+    public int hashCode() {
+        return x*50+y;
+    }
 }

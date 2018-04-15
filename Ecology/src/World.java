@@ -1,7 +1,7 @@
 import java.util.Random;
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.awt.Color;
-import java.util.concurrent.TimeUnit;
 
 public class World {
 
@@ -10,9 +10,10 @@ public class World {
 	private int fox;
 	private int rabbit;
 
-	private ArrayList<Rabbit> rabbitList = new ArrayList<>();
-	private ArrayList<Fox> foxList = new ArrayList<>();
-	private ArrayList<Plant> plantList = new ArrayList<>();
+	private HashSet<Rabbit> rabbitList = new HashSet<>();
+	private HashSet<Fox> foxList = new HashSet<>();
+	private HashSet<Plant> plantList = new HashSet<>();
+	private ArrayList<Plant> seedPlant = new ArrayList<>();
 
 	private Player me;
 	private Random RANDOM = new Random();
@@ -24,7 +25,7 @@ public class World {
 		this.plants = 0;
 		this.fox = 0;
 		this.rabbit = 0;
-		this.me = new Player(new Coordinate(0,0), 100, this);
+		this.me = new Player(new Coordinate(30,30), 100, this);
 
 		while (i < size) {
 			theWorld[i/y][i%y] = new Land(i/y, i%y);
@@ -125,10 +126,17 @@ public class World {
         if (!l.hasPlant()) {
             Plant seedling = new Plant(new Coordinate(x,y));
             l.insert(seedling);
+            seedPlant.add(seedling);
             plants += 1;
             return true;
         }
         return false;
+    }
+
+    public void updatePlants() {
+	    while (seedPlant.size() > 0) {
+	        plantList.add(seedPlant.remove(0));
+        }
     }
 
 /////////////////////////////////////////////////////////////////////
@@ -137,19 +145,24 @@ public class World {
     public void addPlant(Coordinate c) {
         Land l = getLocation(c);
         if (!l.hasPlant()) {
-            l.insert(new Plant(c));
+            Plant seedling = new Plant(c);
+            l.insert(seedling);
+            seedPlant.add(seedling);
             plants += 1;
         }
     }
 
     public void removePlant(Coordinate c) {
         getLocation(c).removePlant();
+
         plants -= 1;
 
     }
 
     public void removeRabbit(Coordinate c) {
+        rabbitList.remove(getLocation(c).getRabbit());
         getLocation(c).removeRabbit();
+        System.out.println("Removed");
         rabbit -= 1;
     }
 
@@ -171,21 +184,22 @@ public class World {
 		int[] current = new int[3];
 		float[][] ratio = new float[3][3];
 
+        int size  = 25;
 		//Setting Plants, Rabbits, Fox in random locations
 		int i = 0;
-		while (i < 50) {
+		while (i < size) {
 			if (game.addRabbit()) {
 				i += 1;
 			}
 		}
 		i = 0;
-		while (i < 50) {
+		while (i < size) {
 			if (game.addFox()) {
 				i += 1;
 			}
 		}
 		i = 0;
-		while (i < 50) {
+		while (i < size) {
 			if (game.addPlant()) {
 				i += 1;
 			}
@@ -199,29 +213,32 @@ public class World {
         // while (timer1.elapsedTime() < 10.0) {
         // 	System.out.println(timer1.elapsedTime());
         // }
+        StdDrawPlus.setCanvasSize(size * 100, size * 100);
+        StdDrawPlus.setXscale(0, size * 2);
+        StdDrawPlus.setYscale(0, size * 2);
 
-        int size  = 50;
-        StdDrawPlus.setCanvasSize(size * 50, size * 50);
-        StdDrawPlus.setXscale(0, size);
-        StdDrawPlus.setYscale(0, size);
 
-//        i = 0;
-//        while (i < 50) {
-//	        for (int x = 0; size > x; x += 1){
-//	            for (int y = 0; size> y; y += 1){
-//	                StdDrawPlus.picture(x + .5, y + .5, "Image/grass.png");
-//	            }
-//	        }
-//	        StdDrawPlus.picture(.5 + i, .5 + i, "Image/astro pose walk 1.png");
-//	        StdDrawPlus.show(15);
-//	        i += 1;
-//        }
 		Stopwatch timer1 = new Stopwatch();
+		String img = "Image/astro pose front.png";
         while (true) {
         	//Update Image
             StdDrawPlus.clear(new Color(0, 0, 0));
-            StdDrawPlus.picture(size / 2, size / 2, "Image/mars plane.png");
-            StdDrawPlus.picture(size * 3 / 5, size * 3 / 5, "Image/astro pose front.png");
+			StdDrawPlus.picture(size, size, "Image/mars plane.png");
+
+            for (Rabbit r : game.rabbitList) {
+                Coordinate newloc = r.getLocation();
+                StdDrawPlus.picture(newloc.getxCord(), newloc.getyCord(), "Image/rabbit1.png");
+            }
+            for (Fox f : game.foxList) {
+                Coordinate newloc = f.getLocation();
+                StdDrawPlus.picture(newloc.getxCord(), newloc.getyCord(), "Image/fox1.png");
+            }
+            for (Plant p : game.plantList) {
+                Coordinate newloc = p.getLocation();
+                StdDrawPlus.picture(newloc.getxCord(), newloc.getyCord(), "Image/PLANTalt.png");
+            }
+
+			StdDrawPlus.picture(myself.getLocation().getxCord(), myself.getLocation().getyCord(), img);
 
 		    if (StdDrawPlus.isZPressed()) {
 		        myself.huntRabbit();
@@ -232,25 +249,29 @@ public class World {
 		    } else if (StdDrawPlus.isVPressed()) {
 		    	myself.grow();
 		    } else if (StdDrawPlus.isUPPressed()) {
-
+		    	myself.moveUp();
+		    	img = "Image/astro pose back.png";
 		    } else if (StdDrawPlus.isDOWNPressed()) {
-
+		    	myself.moveDown();
+		    	img = "Image/astro pose front.png";
 		    } else if (StdDrawPlus.isLEFTPressed()) {
-
+		    	myself.moveLeft();
+		    	img = "Image/astro pose facing left.png";
 		    } else if (StdDrawPlus.isRIGHTPressed()) {
-
+		    	myself.moveRight();
+		    	img = "Image/astro pose facing right.png";
 		    }
 
-            for (Rabbit r : game.rabbitList) {
-                Coordinate newloc = r.getLocation();
-                StdDrawPlus.picture(newloc.getxCord(), newloc.getyCord(), "Image/astro pose back.png");
-            }
             StdDrawPlus.show(250);
             if (timer1.elapsedTime() > 5.0) {
-            	game.moveRabbit();
+	            game.moveRabbit();
+	            game.moveFox();
+	            game.growPlant();
+	            game.updatePlants();
             	timer1 = new Stopwatch();
             }
-            
+            // StdDrawPlus.show(1500);
+
         }
     }
 }

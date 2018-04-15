@@ -3,12 +3,13 @@ import java.util.Random;
 public class Plant {
     private Coordinate location;
     private int x, y;
-    private Random RANDOM = new Random(345);
+    private Random RANDOM;
 
     public Plant(Coordinate location) {
         this.location = location;
         x = location.getxCord();
         y = location.getyCord();
+        RANDOM = new Random(x * y);
     }
 
     public Coordinate grow() {
@@ -54,5 +55,9 @@ public class Plant {
 
     public Coordinate getLocation() {
         return location;
+    }
+    
+    public int hashCode() {
+        return x*50+y;
     }
 }

@@ -16,6 +16,11 @@ public class Land {
     public void addRabbit(Rabbit r) {
         rabbits = r;
     }
+    
+    public Rabbit getRabbit() {
+        return rabbits;
+    }
+
     public boolean hasRabbit() {
         return rabbits != null;
     }
@@ -54,6 +59,6 @@ public class Land {
 
 
     public boolean isEmpty() {
-        return !(hasFox() || hasPlant() || hasRabbit());
+        return !(hasFox() || hasRabbit());
     }
 }

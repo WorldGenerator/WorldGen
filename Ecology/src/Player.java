@@ -4,7 +4,7 @@ public class Player {
     private World w;
 
     public Player(Coordinate startCord, int healthStart, World w) {
-        this.location = location;
+        this.location = startCord;
         health = healthStart;
         this.w = w;
     }
@@ -46,45 +46,42 @@ public class Player {
             w.addPlant(location);
         }
     }
-    public Coordinate moveUp() {
+
+    public void moveUp() {
         //Update location in w randomly
-        boolean[] invalid = new boolean[5];
-        boolean valid = false;
-        while (!valid) {
-            int direction = RANDOM.nextInt(4);
-            if (!invalid[direction]) {
-                invalid[direction] = true;
-                switch (direction) {
-                    case 0:
-                        if (x - 1 >= 0) {
-                            x -= 1;
-                        }
-                        break;
-                    case 1:
-                        if (x + 1 < 50) {
-                            x += 1;
-                        }
-                        break;
-                    case 2:
-                        if (y - 1 >= 0) {
-                            y -= 1;
-                        }
-                        break;
-                    case 3:
-                        if (y + 1 < 50) {
-                            y += 1;
-                        }
-                        break;
-                    case 4:
-                        valid = true;
-                        break;
-                }
-                if (location.getyCord() != y || location.getxCord() != x) {
-                    valid = true;
-                }
-            }
+        int y = location.getyCord();
+        if (y+1 >= 50) {
+            return;
         }
-        return new Coordinate(x, y);
+        
+        location = new Coordinate(location.getxCord(), y+1);
+    }
+    public void moveDown() {
+        //Update location in w randomly
+        int y = location.getyCord();
+        if (y-1 < 0) {
+            return;
+        }
+        
+        location = new Coordinate(location.getxCord(), y-1);
+    }
+    public void moveRight() {
+        //Update location in w randomly
+        int x = location.getxCord();
+        if (x+1 >= 50) {
+            return;
+        }
+        
+        location = new Coordinate(x+1, location.getyCord());
+    }
+    public void moveLeft() {
+        //Update location in w randomly
+        int x = location.getxCord();
+        if (x-1 < 0) {
+            return;
+        }
+        
+        location = new Coordinate(x-1, location.getyCord());
     }
 
     public Coordinate getLocation() {
