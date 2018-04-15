@@ -8,6 +8,9 @@ public class Land {
         Coordinate loc  = new Coordinate(x,y);
     }
 
+    public Coordinate getLocation() {
+        return loc;
+    }
     public void insert(Rabbit target) {
         if (!hasRabbit()){
             rabbits = target;

@@ -10,8 +10,8 @@ public class World {
 	private int fox;
 	private int rabbit;
 
-	private HashSet<Rabbit> rabbitList = new HashSet<>();
-	private HashSet<Fox> foxList = new HashSet<>();
+	private Rabbit[] rabbitList = new Rabbit[2500];
+	private Fox[] foxList = new Fox[2500];
 	private HashSet<Plant> plantList = new HashSet<>();
 	private ArrayList<Plant> seedPlant = new ArrayList<>();
 
@@ -48,30 +48,46 @@ public class World {
 
     //random Rabbit movements
     public void moveRabbit() {
+    	Rabbit[] temp = new Rabbit[2500];
         for (Rabbit r : rabbitList) {
-            Coordinate newLocation = r.move();
-            Land newLand = theWorld[newLocation.getxCord()][newLocation.getyCord()];
-            if (newLand.isEmpty()) {
-                Land oldLand = getLocation(r.getLocation());
-                oldLand.removeRabbit();
-                newLand.addRabbit(r);
-                r.updateLocation(newLocation);
-            }
+        	if (r != null) {
+	            Coordinate newLocation = r.move();
+	            Land newLand = theWorld[newLocation.getxCord()][newLocation.getyCord()];
+	            if (newLand.isEmpty()) {
+	                Land oldLand = getLocation(r.getLocation());
+	                oldLand.removeRabbit();
+	                newLand.addRabbit(r);
+	                temp[newLocation.getxCord()*50 + newLocation.getyCord()] = r;
+	                r.updateLocation(newLocation);
+	            } else {
+	            	temp[r.getLocation().getxCord()*50 + r.getLocation().getyCord()] = r;
+	            }   		
+        	} 
+
         }
+        rabbitList = temp;
     }
 
     //random Fox movements
     public void moveFox() {
+    	Fox[] temp = new Fox[2500];
         for (Fox f : foxList) {
-            Coordinate newLocation = f.move();
-            Land newLand = getLocation(newLocation);
-            if (newLand.isEmpty()) {
-                Land oldLand = getLocation(f.getLocation());
-                oldLand.removeFox();
-                newLand.addFox(f);
-                f.updateLocation(newLocation);
-            }
+        	if (f != null) {
+	            Coordinate newLocation = f.move();
+	            Land newLand = theWorld[newLocation.getxCord()][newLocation.getyCord()];
+	            if (newLand.isEmpty()) {
+	                Land oldLand = getLocation(f.getLocation());
+	                oldLand.removeFox();
+	                newLand.addFox(f);
+	                temp[newLocation.getxCord()*50 + newLocation.getyCord()] = f;
+	                f.updateLocation(newLocation);
+	            } else {
+	            	temp[f.getLocation().getxCord()*50 + f.getLocation().getyCord()] = f;
+	            }   		
+        	} 
+
         }
+        foxList = temp;
     }
 
     //random Plant growth
@@ -94,7 +110,7 @@ public class World {
         if (!l.hasRabbit()) {
             Rabbit bunny = new Rabbit(new Coordinate(x,y));
             l.insert(bunny);
-            rabbitList.add(bunny);
+            rabbitList[place] = bunny;
             this.rabbit += 1;
             return true;
         }
@@ -110,7 +126,7 @@ public class World {
         if (!l.hasFox()) {
             Fox cub = new Fox(new Coordinate(x,y));
             l.insert(cub);
-            foxList.add(cub);
+            foxList[place] = cub;
             this.fox += 1;
             return true;
         }
@@ -154,21 +170,24 @@ public class World {
 
     public void removePlant(Coordinate c) {
         getLocation(c).removePlant();
-
         plants -= 1;
 
     }
 
     public void removeRabbit(Coordinate c) {
-        rabbitList.remove(getLocation(c).getRabbit());
-        getLocation(c).removeRabbit();
-        System.out.println("Removed");
-        rabbit -= 1;
+        if (getLocation(c).hasRabbit()) {
+        	rabbitList[c.getxCord()*50 + c.getyCord()] = null;
+	        getLocation(c).removeRabbit();
+	        rabbit -= 1;
+        }
     }
 
     public void removeFox(Coordinate c) {
-        getLocation(c).removeFox();
-        fox -= 1;
+	    if (getLocation(c).hasFox()) {
+	    	foxList[c.getxCord()*50 + c.getyCord()] = null;
+	        getLocation(c).removeFox();
+	        fox -= 1;
+	    }
     }
 
 
@@ -225,18 +244,18 @@ public class World {
             StdDrawPlus.clear(new Color(0, 0, 0));
 			StdDrawPlus.picture(size, size, "Image/mars plane.png");
 
-            for (Rabbit r : game.rabbitList) {
-                Coordinate newloc = r.getLocation();
-                StdDrawPlus.picture(newloc.getxCord(), newloc.getyCord(), "Image/rabbit1.png");
-            }
-            for (Fox f : game.foxList) {
-                Coordinate newloc = f.getLocation();
-                StdDrawPlus.picture(newloc.getxCord(), newloc.getyCord(), "Image/fox1.png");
-            }
-            for (Plant p : game.plantList) {
-                Coordinate newloc = p.getLocation();
-                StdDrawPlus.picture(newloc.getxCord(), newloc.getyCord(), "Image/PLANTalt.png");
-            }
+			for (int x = 0; x < size *2 ; x += 1) {
+				for (int y = 0 ; y <size*2 ;  y+= 1) {
+					Land here = game.theWorld[x][y];
+					if (here.hasRabbit()) {
+						StdDrawPlus.picture(x, y, "Image/rabbit1.png");
+					} else if (here.hasFox()) {
+						StdDrawPlus.picture(x, y, "Image/fox1.png");
+					} else if (here.hasPlant()) {
+						StdDrawPlus.picture(x, y, "Image/PLANTalt.png");
+					}
+				}
+			}
 
 			StdDrawPlus.picture(myself.getLocation().getxCord(), myself.getLocation().getyCord(), img);
 
