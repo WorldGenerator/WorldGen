@@ -1,6 +1,7 @@
 import java.util.Random;
 import java.util.ArrayList;
 import java.awt.Color;
+import java.util.concurrent.TimeUnit;
 
 public class World {
     private Land[][] theWorld = null;
@@ -152,6 +153,8 @@ public class World {
         fox -= 1;
     }
 
+
+
 /////////////////////////////////////////////////////////////////////
 ////         Interactive Occurance								/////
 /////////////////////////////////////////////////////////////////////
@@ -180,18 +183,17 @@ public class World {
         }
 
         int size  = 50;
-        StdDraw.setCanvasSize(size * 16, size * 16);
-        StdDraw.setXscale(0, size);
-        StdDraw.setYscale(0, size);
-        StdDraw.clear(new Color(0, 0, 0));
-        StdDraw.enableDoubleBuffering();
+        StdDrawPlus.setCanvasSize(size * 32, size * 32);
+        StdDrawPlus.setXscale(0, size / 2);
+        StdDrawPlus.setYscale(0, size / 2);
+        StdDrawPlus.clear(new Color(0, 0, 0));
 
         for (int x = 0; size > x; x += 1){
             for (int y = 0; size> y; y += 1){
-                StdDraw.picture(x + .5, y + .5, "Image/grass.png");
+                StdDrawPlus.picture(x + .5, y + .5, "Image/grass.png");
             }
         }
-        StdDraw.picture(0, 0, "Image/astro pose walk 1.png");
-        StdDraw.show();
+        StdDrawPlus.picture(0, 0, "Image/astro pose walk 1.png");
+        StdDrawPlus.show();
     }
 }
