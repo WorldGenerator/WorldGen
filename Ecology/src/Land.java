@@ -10,7 +10,6 @@ public class Land {
 
 	public Land(int x, int y) {
 		Coordinate loc  = new Coordinate(x,y);
-		ArrayList container = new ArrayList();
 	}
 
 	public void insert(Object target) {
