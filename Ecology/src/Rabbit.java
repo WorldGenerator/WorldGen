@@ -3,12 +3,13 @@ import java.util.Random;
 public class Rabbit {
     private Coordinate location;
     private int x, y;
-    private Random RANDOM = new Random(234);
+    private Random RANDOM;
 
     public Rabbit(Coordinate location) {
         this.location = location;
         x = location.getxCord();
         y = location.getyCord();
+        RANDOM = new Random(x * y);
     }
 
     public Coordinate move() {
@@ -17,7 +18,7 @@ public class Rabbit {
         boolean valid = false;
 
         while (!valid) {
-            int direction = RANDOM.nextInt(4);
+            int direction = RANDOM.nextInt(5);
             if (!invalid[direction]) {
                 invalid[direction] = true;
                 switch (direction) {
@@ -30,13 +31,15 @@ public class Rabbit {
                         if (x + 1 < 50) {
                             x += 1;
                         }
+                        break;
                     case 2:
-                        if (y - 1 >= 0) {
-                            y -= 1;
-                        }
-                    case 3:
                         if (y + 1 < 50) {
                             y += 1;
+                        }
+                        break;
+                    case 3:
+                        if (y - 1 >= 0) {
+                            y -= 1;
                         }
                     case 4:
                         valid = true;

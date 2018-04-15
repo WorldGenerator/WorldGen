@@ -205,9 +205,7 @@ public class World {
         StdDrawPlus.setCanvasSize(size * 50, size * 50);
         StdDrawPlus.setXscale(0, size);
         StdDrawPlus.setYscale(0, size);
-        StdDrawPlus.clear(new Color(0, 0, 0));
-        StdDrawPlus.picture(size / 2, size / 2, "Image/mars plane.png");
-        StdDrawPlus.picture(size * 2 / 3, size * 2 / 3, "Image/astro pose front.png");
+
 //        i = 0;
 //        while (i < 50) {
 //	        for (int x = 0; size > x; x += 1){
@@ -219,10 +217,16 @@ public class World {
 //	        StdDrawPlus.show(15);
 //	        i += 1;
 //        }
-        for (Rabbit r : game.rabbitList) {
-            Coordinate newloc = r.getLocation();
-            StdDrawPlus.picture(newloc.getxCord(), newloc.getyCord(), "Image/astro pose back.png");
+        while (true) {
+            StdDrawPlus.clear(new Color(0, 0, 0));
+            StdDrawPlus.picture(size / 2, size / 2, "Image/mars plane.png");
+            StdDrawPlus.picture(size * 3 / 5, size * 3 / 5, "Image/astro pose front.png");
+            for (Rabbit r : game.rabbitList) {
+                Coordinate newloc = r.getLocation();
+                StdDrawPlus.picture(newloc.getxCord(), newloc.getyCord(), "Image/astro pose back.png");
+            }
+            StdDrawPlus.show(250);
+            game.moveRabbit();
         }
-        StdDrawPlus.show();
     }
 }
