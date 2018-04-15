@@ -17,6 +17,10 @@ public class World {
 		me = new Player(new Coordinate(0,0), 100.0);
 	}
 
+    public Land[][] getWorld() {
+        return theWorld;
+    }
+
 	public static void main(String[] args) {
 		World n = new World(50, 50);
 

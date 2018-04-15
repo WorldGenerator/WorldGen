@@ -2,26 +2,50 @@ import java.util.List;
 import java.util.ArrayList;
 
 public class Land {
-	private final Coordinate loc;
+	private Coordinate loc;
 	private boolean plant = false;
 	private boolean me = false;
-	private List<Animal> rabbits;
-	private List<Animal> foxy;
+	private List<Rabbit> rabbits;
+	private List<Fox> foxy;
 
 	public Land(int x, int y) {
-		loc  = new Coordinate(x,y);
-		rabbits = new ArrayList<Animal>();
-		foxy = new ArrayList<Animal>();
+		Coordinate loc  = new Coordinate(x,y);
+		ArrayList container = new ArrayList();
+		rabbits = new ArrayList<Rabbit>();
+		foxy = new ArrayList<Fox>();
 	}
 
-	public void insert(Animal target) {
+	public void insert(Object target) {
 		if (target instanceof Rabbit) {
-			rabbits.add(target);
+			rabbits.add((Rabbit) target);
 		} else if (target instanceof Fox) {
-			foxy.add(target);
+			foxy.add((Fox) target);
 		} else {
 			System.out.println("Should not be added");
 		}
 	}
 
+	public boolean hasPlant() {
+	    return plant;
+    }
+
+    public void removePlant() {
+	    plant = false;
+    }
+
+    public boolean hasRabbit() {
+	    return rabbits.size() > 0;
+    }
+
+    public void removeRabbit() {
+	    rabbits.remove(0);
+    }
+
+    public boolean hasFox() {
+	    return foxy.size() > 0;
+    }
+
+    public void removeFox() {
+	    foxy.remove(0);
+    }
 }

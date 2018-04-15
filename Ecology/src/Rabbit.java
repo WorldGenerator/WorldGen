@@ -18,19 +18,20 @@ public class Rabbit implements Animal {
     }
 
     public void eat() {
-    //     //if same tile as a rabbit, probability of eating rabbit
-    //     //if successful, hungry remains false
-    //     Land area = w.getLand[x][y];
-    //     if (area.hasPlant) {
-    //         area.removePlant();
-    //         hunger = 10;
-    //     }
+        //if same tile as a rabbit, probability of eating rabbit
+        //if successful, hungry remains false
+        Land area = w.getWorld()[x][y];
+        if (area.hasPlant()) {
+            area.removePlant();
+            hunger = 10;
+        }
     }
 
     public Coordinate move() {
         //Update location in w randomly
         boolean[] invalid = new boolean[5];
         boolean valid = false;
+
         while (!valid) {
             int direction = RANDOM.nextInt(4);
             if (!invalid[direction]) {
@@ -66,12 +67,12 @@ public class Rabbit implements Animal {
     }
 
     public void starvation() {
-    //     if (hunger <= 0) {
-    //         //Replace this instance with land, garbage collect
-    //         w.getLand[x][y].removeFox();
-    //     } else {
-    //         hunger -= 1;
-    //     }
+        if (hunger <= 0) {
+            //Replace this instance with land, garbage collect
+            w.getWorld()[x][y].removeFox();
+        } else {
+            hunger -= 1;
+        }
     }
 
     public Coordinate getLocation() {
