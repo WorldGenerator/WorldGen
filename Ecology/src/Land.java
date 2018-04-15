@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class Land {
 	private final Coordinate loc;
 	private boolean plant = false;
