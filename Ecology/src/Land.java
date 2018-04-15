@@ -1,73 +1,59 @@
 public class Land {
-	private Coordinate loc;
-	private Plant plant = null;
-	private boolean me = false;
-	private Rabbit rabbits = null;
-	private Fox foxy = null;
+    private Coordinate loc;
+    private Plant plant = null;
+    private Rabbit rabbits = null;
+    private Fox foxy = null;
 
-	public Land(int x, int y) {
-		Coordinate loc  = new Coordinate(x,y);
-	}
-
-	public void insert(Object target) {
-		if ((target instanceof Rabbit) && !isEmpty()){
-			rabbits = (Rabbit)target;
-		} else if ((target instanceof Rabbit) && !isEmpty()) {
-			foxy = (Fox)target;
-		} else {
-			System.out.println("Should not be added");
-		}
-	}
-
-	public boolean hasPlant() {
-	    return plant != null;
+    public Land(int x, int y) {
+        Coordinate loc  = new Coordinate(x,y);
     }
 
-    public boolean removePlant() {
-	    if (hasPlant()) {
-	        plant = null;
-	        return true;
+    public void insert(Rabbit target) {
+        if (!hasRabbit()){
+            rabbits = target;
         }
-	    return false;
     }
-
-    public void addPlant(Plant p) {
-	    plant = p;
-    }
-
-    public boolean hasRabbit() {
-	    return rabbits != null;
-    }
-
     public void addRabbit(Rabbit r) {
-	    rabbits = r;
+        rabbits = r;
+    }
+    public boolean hasRabbit() {
+        return rabbits != null;
+    }
+    public void removeRabbit() {
+        rabbits = null;
     }
 
-    public boolean removeRabbit() {
-	    if (hasRabbit()) {
-	        rabbits = null;
-	        return true;
+
+    public void insert(Fox target) {
+        if (!hasFox()) {
+            foxy = target;
         }
-        return false;
     }
-
-    public boolean hasFox() {
-	    return foxy != null;
-    }
-
     public void addFox(Fox f) {
-	    foxy = f;
+        foxy = f;
+    }
+    public boolean hasFox() {
+        return foxy != null;
+    }
+    public void removeFox() {
+        foxy = null;
     }
 
-    public boolean removeFox() {
-	    if (hasFox()) {
-	        foxy = null;
-	        return true;
+
+    public void insert(Plant target) {
+        if (!hasPlant()) {
+            plant = target;
         }
-        return false;
     }
+    public boolean hasPlant() {
+        return plant != null;
+    }
+    public void removePlant() {
+        plant = null;
+    }
+
 
     public boolean isEmpty() {
-	    return !(hasFox() || hasPlant() || hasRabbit());
+        return !(hasFox() || hasPlant() || hasRabbit());
     }
 }
