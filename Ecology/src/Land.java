@@ -1,10 +1,12 @@
+import java.util.List;
 import java.util.ArrayList;
 
 public class Land {
 	private Coordinate loc;
 	private boolean plant = false;
-	private ArrayList<Rabbit> rabbits;
-	private ArrayList<Fox> foxy;
+	private boolean me = false;
+	private List<Rabbit> rabbits;
+	private List<Fox> foxy;
 
 	public Land(int x, int y) {
 		Coordinate loc  = new Coordinate(x,y);
