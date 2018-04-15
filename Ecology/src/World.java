@@ -72,7 +72,7 @@ public class World {
 
     //Called by Player
     public void addPlant(Coordinate c) {
-    	getLocation(c).addPlant(new Plant(c));
+    	getLocation(c).addPlant();
     	plants += 1;
     }
 
