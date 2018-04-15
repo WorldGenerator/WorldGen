@@ -9,6 +9,7 @@ public class World {
 	private int plants;
 	private int fox;
 	private int rabbit;
+	private float[][] ratio = {{0.4f, -.8f, 0f}, {0.2f, 0.2f, -1.2f}, {0f, 0.25f, -0.5f}};
 
 	private Rabbit[] rabbitList = new Rabbit[2500];
 	private Fox[] foxList = new Fox[2500];
@@ -190,7 +191,21 @@ public class World {
 	    }
     }
 
+/////////////////////////////////////////////////////////////////////
+////         Target Achievers									/////
+/////////////////////////////////////////////////////////////////////
 
+    public void targetPlant(int target) {
+		while (plants < target) {
+			addRabbit();
+		}
+		while (target < plants) {
+	        int place = RANDOM.nextInt(2500);
+	        int x = (int)place/50;
+	        int y = place%50;
+			removeRabbit(new Coordinate(x,y));
+		}
+    }
 
 /////////////////////////////////////////////////////////////////////
 ////         Interactive Occurance								/////
@@ -200,8 +215,6 @@ public class World {
 
 		World game = new World(50, 50);
 		Player myself = game.me;
-		int[] current = new int[3];
-		float[][] ratio = new float[3][3];
 
         int size  = 25;
 		//Setting Plants, Rabbits, Fox in random locations
@@ -223,11 +236,7 @@ public class World {
 				i += 1;
 			}
 		}
-		current[0] = game.plants;
-		current[1] = game.fox;
-		current[2] = game.rabbit;
 		
-
 
         // while (timer1.elapsedTime() < 10.0) {
         // 	System.out.println(timer1.elapsedTime());
@@ -236,8 +245,13 @@ public class World {
         StdDrawPlus.setXscale(0, size * 2);
         StdDrawPlus.setYscale(0, size * 2);
 
-
+        //MOVEMENT TIME
 		Stopwatch timer1 = new Stopwatch();
+
+		//ENVIRONMENT TIME
+		
+		Stopwatch timing = new Stopwatch();
+
 		String img = "Image/astro pose front.png";
         while (true) {
         	//Update Image
@@ -285,9 +299,26 @@ public class World {
             if (timer1.elapsedTime() > 5.0) {
 	            game.moveRabbit();
 	            game.moveFox();
-	            game.growPlant();
-	            game.updatePlants();
+	            // game.growPlant();
+	            // game.updatePlants();
             	timer1 = new Stopwatch();
+            }
+
+            if (timing.elaspedTime() > 15.0) {
+            	float[][] r = game.ratio;
+            	int[] current = new int[3];
+
+				current[0] = game.plants;
+				current[1] = game.rabbit;
+				current[2] = game.fox;
+
+            	int targetP = (int) ((current[0]*(r[0][0])) + (current[1]*(r[1][0])) + (current[2]*(r[2][0])));
+            	int targetR = (int) ((current[0]*(r[0][1])) + (current[1]*(r[1][1])) + (current[2]*(r[2][1])));
+            	int targetF = (int) ((current[0]*(r[0][2])) + (current[1]*(r[1][2])) + (current[2]*(r[2][2])));
+            	System.out.println("Start " + timing.elaspedTime());
+            	game.targetPlant(targetP);
+            	System.out.println("End " + timing.elaspedTime());
+            	timing = new Stopwatch();
             }
             // StdDrawPlus.show(1500);
 
