@@ -6,6 +6,11 @@ We are using standard java libraries for the 2D completed product, and using ocu
 No prior coding or planning was done;  we actually assembled at the hackathon!
 
 
-# Development
+## Development
 
-giff-kawaii was developed at Hackital 2017 by Minh Nguyen, MyeongJae "Tommy" Chu, Richard Yu, and Luke Vacek in 30 hours.
+Life on MARS (WorldGen) was developed at **SodaHacks** by Minh Nguyen, MyeongJae *"Tommy"* Chu, Richard Yu, and Luke Vacek in 30 hours.
+
+### Roadblocks
+
+
+## Future Steps
