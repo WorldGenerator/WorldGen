@@ -14,7 +14,7 @@ public class World {
 	private Rabbit[] rabbitList = new Rabbit[2500];
 	private Fox[] foxList = new Fox[2500];
 	private Plant[] plantList = new Plant[2500];
-	private ArrayList<Plant> seedPlant = new ArrayList<>();
+	// private ArrayList<Plant> seedPlant = new ArrayList<>();
 
 	private Player me;
 	private Random RANDOM = new Random();
@@ -171,7 +171,7 @@ public class World {
         if (!l.hasPlant()) {
             Plant seedling = new Plant(c);
             l.insert(seedling);
-            seedPlant.add(seedling);
+            plantList[c.getxCord()*50 + c.getyCord()] = seedling;
             plants += 1;
         }
     }
@@ -182,8 +182,6 @@ public class World {
 	        getLocation(c).removePlant();
 	        plants -= 1;    		
     	}
-
-
     }
 
     public void removeRabbit(Coordinate c) {
@@ -201,6 +199,7 @@ public class World {
 	        fox -= 1;
 	    }
     }
+
 
 /////////////////////////////////////////////////////////////////////
 ////         Target Achievers									/////
